@@ -92,8 +92,8 @@
 		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаВыбора.Form" id="73511832-d736-45c3-824c-bd7b3e0c3392.0" configVersion="5f764255bbbc3049a37816ccbed490af00000000"/>
 		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаСписка" id="6790bab3-ca03-49bb-9318-5b119e52bfb1" configVersion="0c28d55ca7b967498bd234e97c3ee29000000000"/>
 		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаСписка.Form" id="6790bab3-ca03-49bb-9318-5b119e52bfb1.0" configVersion="755d96829a54ea4e8b9faac5210245d300000000"/>
-		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b" configVersion="9acfdf1a38b018449a1eb91711e8402d00000000"/>
-		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента.Form" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b.0" configVersion="987cd2bfb3cd8b40aa959f1579faf08200000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b" configVersion="7b10a6c00f6f344298ad7b682921461400000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента.Form" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b.0" configVersion="796d7f8ecbaf2648a33ab4fcacf7e3ce00000000"/>
 		<Metadata name="Catalog.ФутбольныеКлубы.ObjectModule" id="41ac66db-2ef6-4354-baeb-75c76e0fca71.0" configVersion="28817fa823c554468e33d5525d8e314b00000000"/>
 		<Metadata name="CommonForm.СтартИгры" id="cfec41fa-c833-45b4-a768-daf4e27c4cb5" configVersion="3513e141bb9f424eae7dce5370168fa600000000"/>
 		<Metadata name="CommonForm.СтартИгры.Form" id="cfec41fa-c833-45b4-a768-daf4e27c4cb5.0" configVersion="c4dc532ffae96246bfe209193303b56400000000"/>
@@ -244,8 +244,8 @@
 			<Metadata name="Document.Трансфер.TabularSection.ИсторияПереговоров.Attribute.ТекстОтвета" id="de08301d-a9f6-4af3-a261-63db4e9eae4b"/>
 		</Metadata>
 		<Metadata name="Document.Трансфер.Command.ВсеТрансферы.CommandModule" id="61bccb37-531a-4cc8-93cc-cb24d96e4de8.2" configVersion="87966b65b0d5a645a6b7c322aeae225600000000"/>
-		<Metadata name="Document.Трансфер.Form.ФормаДокумента" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef" configVersion="453c032f6071914fa6754e9b174398de00000000"/>
-		<Metadata name="Document.Трансфер.Form.ФормаДокумента.Form" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef.0" configVersion="9c081b01c22e30418e092a7a4bd247f400000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаДокумента" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef" configVersion="d3fa0af0ea87954a906d6dbb822e2ea400000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаДокумента.Form" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef.0" configVersion="be33cd5d1ad3ab41b97fb6933eeae8e900000000"/>
 		<Metadata name="Document.Трансфер.Form.ФормаСписка" id="43ea79c8-cbb0-4b68-b47d-44d65c525d18" configVersion="9f7c079ca0d4bf4f9e1616698a8505ac00000000"/>
 		<Metadata name="Document.Трансфер.Form.ФормаСписка.Form" id="43ea79c8-cbb0-4b68-b47d-44d65c525d18.0" configVersion="ca7c839970545b4abf6e8915f141e33200000000"/>
 		<Metadata name="Document.Трансфер.ObjectModule" id="22df8344-0b07-44ff-ba8c-4492f80d3886.0" configVersion="485cd5c441d38e49a2b59690763554d900000000"/>
