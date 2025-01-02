@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаГоризонтальная" id="31">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="32"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПредложение" id="33">
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа предложение</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПредложениеРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<LabelField name="ТрансферныйБюджет" id="90">
+							<DataPath>ТрансферныйБюджет</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:TextLevel3" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ТрансферныйБюджетКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ТрансферныйБюджетРасширеннаяПодсказка" id="92"/>
+							<SelectedItemsActionsPanel name="ТрансферныйБюджетПанельДействийВыделенныхСтрок" id="93"/>
+						</LabelField>
+						<UsualGroup name="ГруппаПокупка" id="109">
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПокупкаРасширеннаяПодсказка" id="110"/>
+							<ChildItems>
+								<LabelField name="СтатусПереговоров" id="27">
+									<DataPath>Объект.СтатусПереговоров</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтатусПереговоровКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="СтатусПереговоровРасширеннаяПодсказка" id="29"/>
+									<SelectedItemsActionsPanel name="СтатусПереговоровПанельДействийВыделенныхСтрок" id="30"/>
+								</LabelField>
+								<LabelField name="ОтветноеПредложение" id="23">
+									<DataPath>Объект.ОтветноеПредложение</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтветноеПредложениеКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ОтветноеПредложениеРасширеннаяПодсказка" id="25"/>
+									<SelectedItemsActionsPanel name="ОтветноеПредложениеПанельДействийВыделенныхСтрок" id="26"/>
+								</LabelField>
+								<InputField name="Предложение" id="19">
+									<DataPath>Объект.Предложение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПредложениеКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ПредложениеРасширеннаяПодсказка" id="21"/>
+									<SelectedItemsActionsPanel name="ПредложениеПанельДействийВыделенныхСтрок" id="22"/>
+								</InputField>
+								<Button name="ОтправитьПредложение" id="35">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ОтправитьПредложение</CommandName>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ОтправитьПредложениеРасширеннаяПодсказка" id="36"/>
+								</Button>
+								<Button name="ПрекратитьПереговоры" id="99">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПрекратитьПереговоры</CommandName>
+									<ExtendedTooltip name="ПрекратитьПереговорыРасширеннаяПодсказка" id="100"/>
+								</Button>
+								<LabelDecoration name="ДекорацияПодсказка" id="94">
+									<TextColor>pal:Green</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предложение отправлено. Прокрутите день и ждите ответа.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="96"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПродажа" id="111">
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПродажаРасширеннаяПодсказка" id="112"/>
+							<ChildItems>
+								<LabelField name="ПредложениеПродажа" id="121">
+									<DataPath>Объект.Предложение</DataPath>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<ContextMenu name="ПредложениеПродажаКонтекстноеМеню" id="122"/>
+									<ExtendedTooltip name="ПредложениеПродажаРасширеннаяПодсказка" id="123"/>
+									<SelectedItemsActionsPanel name="ПредложениеПродажаПанельДействийВыделенныхСтрок" id="124"/>
+								</LabelField>
+								<InputField name="СтатусПереговоровПродажа" id="113">
+									<DataPath>Объект.СтатусПереговоров</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтатусПереговоровПродажаКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="СтатусПереговоровПродажаРасширеннаяПодсказка" id="115"/>
+									<SelectedItemsActionsPanel name="СтатусПереговоровПродажаПанельДействийВыделенныхСтрок" id="116"/>
+									<Events>
+										<Event name="OnChange">СтатусПереговоровПродажаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОтветноеПредложениеПродажа" id="117">
+									<DataPath>Объект.ОтветноеПредложение</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОтветноеПредложениеПродажаКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ОтветноеПредложениеПродажаРасширеннаяПодсказка" id="119"/>
+									<SelectedItemsActionsPanel name="ОтветноеПредложениеПродажаПанельДействийВыделенныхСтрок" id="120"/>
+								</InputField>
+								<Button name="ОтправитьОтвет" id="125">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ОтправитьОтвет</CommandName>
+									<ButtonImportance>Main</ButtonImportance>
+									<ExtendedTooltip name="ОтправитьОтветРасширеннаяПодсказка" id="126"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ИсторияПереговоров" id="53">
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ИсторияПереговоров</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИсторияПереговоровКонтекстноеМеню" id="54"/>
+							<AutoCommandBar name="ИсторияПереговоровКоманднаяПанель" id="55"/>
+							<ExtendedTooltip name="ИсторияПереговоровРасширеннаяПодсказка" id="56"/>
+							<SearchStringAddition name="ИсторияПереговоровСтрокаПоиска" id="57">
+								<AdditionSource>
+									<Item>ИсторияПереговоров</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПереговоровСтрокаПоискаКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="ИсторияПереговоровСтрокаПоискаРасширеннаяПодсказка" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияПереговоровСостояниеПросмотра" id="60">
+								<AdditionSource>
+									<Item>ИсторияПереговоров</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПереговоровСостояниеПросмотраКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="ИсторияПереговоровСостояниеПросмотраРасширеннаяПодсказка" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияПереговоровУправлениеПоиском" id="63">
+								<AdditionSource>
+									<Item>ИсторияПереговоров</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияПереговоровУправлениеПоискомКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="ИсторияПереговоровУправлениеПоискомРасширеннаяПодсказка" id="65"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ИсторияПереговоровПанельДействийВыделенныхСтрок" id="66"/>
+							<ChildItems>
+								<InputField name="ИсторияПереговоровТекстПредложения" id="80">
+									<DataPath>Объект.ИсторияПереговоров.ТекстПредложения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Предложение</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияПереговоровТекстПредложенияКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ИсторияПереговоровТекстПредложенияРасширеннаяПодсказка" id="82"/>
+									<SelectedItemsActionsPanel name="ИсторияПереговоровТекстПредложенияПанельДействийВыделенныхСтрок" id="83"/>
+								</InputField>
+								<InputField name="ИсторияПереговоровТекстОтвета" id="84">
+									<DataPath>Объект.ИсторияПереговоров.ТекстОтвета</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ответ</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияПереговоровТекстОтветаКонтекстноеМеню" id="85"/>
+									<ExtendedTooltip name="ИсторияПереговоровТекстОтветаРасширеннаяПодсказка" id="86"/>
+									<SelectedItemsActionsPanel name="ИсторияПереговоровТекстОтветаПанельДействийВыделенныхСтрок" id="87"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Основное" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<PictureField name="АдресФотографии" id="103">
+							<DataPath>АдресФотографии</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>15</Width>
+							<Height>4</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ContextMenu name="АдресФотографииКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="АдресФотографииРасширеннаяПодсказка" id="105"/>
+							<SelectedItemsActionsPanel name="АдресФотографииПанельДействийВыделенныхСтрок" id="106"/>
+						</PictureField>
+						<LabelField name="Футболист" id="15">
+							<DataPath>Объект.Футболист</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ФутболистКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ФутболистРасширеннаяПодсказка" id="17"/>
+							<SelectedItemsActionsPanel name="ФутболистПанельДействийВыделенныхСтрок" id="18"/>
+						</LabelField>
+						<LabelField name="ФутболистРейтинг" id="37">
+							<DataPath>Объект.Футболист.Рейтинг</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ФутболистРейтингКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ФутболистРейтингРасширеннаяПодсказка" id="39"/>
+							<SelectedItemsActionsPanel name="ФутболистРейтингПанельДействийВыделенныхСтрок" id="40"/>
+						</LabelField>
+						<LabelField name="ФутболистПозиция" id="41">
+							<DataPath>Объект.Футболист.Позиция</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ФутболистПозицияКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ФутболистПозицияРасширеннаяПодсказка" id="43"/>
+							<SelectedItemsActionsPanel name="ФутболистПозицияПанельДействийВыделенныхСтрок" id="44"/>
+						</LabelField>
+						<LabelField name="ФутболистВозраст" id="45">
+							<DataPath>Объект.Футболист.Возраст</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ContextMenu name="ФутболистВозрастКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ФутболистВозрастРасширеннаяПодсказка" id="47"/>
+							<SelectedItemsActionsPanel name="ФутболистВозрастПанельДействийВыделенныхСтрок" id="48"/>
+						</LabelField>
+						<LabelField name="ТрансфернаяСтоимость" id="49">
+							<DataPath>ТрансфернаяСтоимость</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<ContextMenu name="ТрансфернаяСтоимостьКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ТрансфернаяСтоимостьРасширеннаяПодсказка" id="51"/>
+							<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьПанельДействийВыделенныхСтрок" id="52"/>
+						</LabelField>
+						<LabelField name="КлубПокупатель" id="11">
+							<DataPath>Объект.КлубПокупатель</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КлубПокупательКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="КлубПокупательРасширеннаяПодсказка" id="13"/>
+							<SelectedItemsActionsPanel name="КлубПокупательПанельДействийВыделенныхСтрок" id="14"/>
+						</LabelField>
+						<LabelField name="КлубПродавец" id="7">
+							<DataPath>Объект.КлубПродавец</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КлубПродавецКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КлубПродавецРасширеннаяПодсказка" id="9"/>
+							<SelectedItemsActionsPanel name="КлубПродавецПанельДействийВыделенныхСтрок" id="10"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Трансфер</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ТрансфернаяСтоимость" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансферная стоимость</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТрансферныйБюджет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансферный бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресФотографии" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес фотографии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОтправитьПредложение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить предложение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить предложение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьПредложение</Action>
+		</Command>
+		<Command name="ПрекратитьПереговоры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекратить переговоры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прекратить переговоры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрекратитьПереговоры</Action>
+		</Command>
+		<Command name="ОтправитьОтвет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить ответ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить ответ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьОтвет</Action>
+		</Command>
+	</Commands>
+</Form>

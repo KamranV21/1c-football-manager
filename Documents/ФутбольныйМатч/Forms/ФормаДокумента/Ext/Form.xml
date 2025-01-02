@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновнаяИнформация" id="87">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяИнформацияРасширеннаяПодсказка" id="88"/>
+			<ChildItems>
+				<LabelField name="Лига" id="7">
+					<DataPath>Объект.Лига</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ЛигаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЛигаРасширеннаяПодсказка" id="9"/>
+					<SelectedItemsActionsPanel name="ЛигаПанельДействийВыделенныхСтрок" id="60"/>
+				</LabelField>
+				<LabelField name="Сезон" id="10">
+					<DataPath>Объект.Сезон</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="СезонКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СезонРасширеннаяПодсказка" id="12"/>
+					<SelectedItemsActionsPanel name="СезонПанельДействийВыделенныхСтрок" id="61"/>
+				</LabelField>
+				<LabelField name="ИгровойДень" id="13">
+					<DataPath>Объект.ИгровойДень</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Игоровой день</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Left</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ИгровойДеньКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ИгровойДеньРасширеннаяПодсказка" id="15"/>
+					<SelectedItemsActionsPanel name="ИгровойДеньПанельДействийВыделенныхСтрок" id="62"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКоманды" id="80">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаХозяева" id="76">
+					<Group>AlwaysHorizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаХозяеваРасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<LabelField name="Хозяева" id="16">
+							<DataPath>Объект.Хозяева</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="ХозяеваКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ХозяеваРасширеннаяПодсказка" id="18"/>
+							<SelectedItemsActionsPanel name="ХозяеваПанельДействийВыделенныхСтрок" id="63"/>
+						</LabelField>
+						<LabelField name="ГолыХозяев" id="22">
+							<DataPath>Объект.ГолыХозяев</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:TitleLevel1" kind="StyleItem"/>
+							<ContextMenu name="ГолыХозяевКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ГолыХозяевРасширеннаяПодсказка" id="24"/>
+							<SelectedItemsActionsPanel name="ГолыХозяевПанельДействийВыделенныхСтрок" id="65"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияРазделитель" id="82">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияРазделительКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ДекорацияРазделительРасширеннаяПодсказка" id="84"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаГости" id="78">
+					<Group>AlwaysHorizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГостиРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<LabelField name="ГолыГостей" id="25">
+							<DataPath>Объект.ГолыГостей</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:TitleLevel1" kind="StyleItem"/>
+							<ContextMenu name="ГолыГостейКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ГолыГостейРасширеннаяПодсказка" id="27"/>
+							<SelectedItemsActionsPanel name="ГолыГостейПанельДействийВыделенныхСтрок" id="66"/>
+						</LabelField>
+						<LabelField name="Гости" id="19">
+							<DataPath>Объект.Гости</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<Hiperlink>true</Hiperlink>
+							<ContextMenu name="ГостиКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ГостиРасширеннаяПодсказка" id="21"/>
+							<SelectedItemsActionsPanel name="ГостиПанельДействийВыделенныхСтрок" id="64"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСобытияМатча" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>События матча</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа события матча</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаСобытияМатчаРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<Table name="Голы" id="28">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ReadOnly>true</ReadOnly>
+					<RowSelectionMode>Cell</RowSelectionMode>
+					<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Голы</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<ShowCommandBar>false</ShowCommandBar>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ГолыКонтекстноеМеню" id="29"/>
+					<AutoCommandBar name="ГолыКоманднаяПанель" id="30"/>
+					<ExtendedTooltip name="ГолыРасширеннаяПодсказка" id="31"/>
+					<SearchStringAddition name="ГолыСтрокаПоиска" id="32">
+						<AdditionSource>
+							<Item>Голы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГолыСтрокаПоискаКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="ГолыСтрокаПоискаРасширеннаяПодсказка" id="34"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ГолыСостояниеПросмотра" id="35">
+						<AdditionSource>
+							<Item>Голы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ГолыСостояниеПросмотраКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="ГолыСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ГолыУправлениеПоиском" id="38">
+						<AdditionSource>
+							<Item>Голы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ГолыУправлениеПоискомКонтекстноеМеню" id="39"/>
+						<ExtendedTooltip name="ГолыУправлениеПоискомРасширеннаяПодсказка" id="40"/>
+					</SearchControlAddition>
+					<SelectedItemsActionsPanel name="ГолыПанельДействийВыделенныхСтрок" id="67"/>
+					<ChildItems>
+						<InputField name="ГолыМинута" id="55">
+							<DataPath>Объект.Голы.Минута</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГолыМинутаКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ГолыМинутаРасширеннаяПодсказка" id="57"/>
+							<SelectedItemsActionsPanel name="ГолыМинутаПанельДействийВыделенныхСтрок" id="68"/>
+						</InputField>
+						<InputField name="ГолыКоманда" id="44">
+							<DataPath>Объект.Голы.ФутбольныйКлуб</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГолыКомандаКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ГолыКомандаРасширеннаяПодсказка" id="46"/>
+							<SelectedItemsActionsPanel name="ГолыКомандаПанельДействийВыделенныхСтрок" id="69"/>
+						</InputField>
+						<InputField name="ГолыАвторГола" id="47">
+							<DataPath>Объект.Голы.АвторГола</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГолыАвторГолаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ГолыАвторГолаРасширеннаяПодсказка" id="49"/>
+							<SelectedItemsActionsPanel name="ГолыАвторГолаПанельДействийВыделенныхСтрок" id="70"/>
+						</InputField>
+						<InputField name="ГолыГолеваяПередача" id="50">
+							<DataPath>Объект.Голы.ГолеваяПередача</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГолыГолеваяПередачаКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="ГолыГолеваяПередачаРасширеннаяПодсказка" id="52"/>
+							<SelectedItemsActionsPanel name="ГолыГолеваяПередачаПанельДействийВыделенныхСтрок" id="71"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ФутбольныйМатч</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

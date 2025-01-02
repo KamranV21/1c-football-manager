@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChoiceMode>true</ChoiceMode>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="СписокПанельДействийВыделенныхСтрок" id="16"/>
+			<ChildItems>
+				<LabelField name="ФутбольныйКлуб" id="26">
+					<DataPath>Список.ФутбольныйКлуб</DataPath>
+					<ContextMenu name="ФутбольныйКлубКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ФутбольныйКлубРасширеннаяПодсказка" id="28"/>
+					<SelectedItemsActionsPanel name="ФутбольныйКлубПанельДействийВыделенныхСтрок" id="29"/>
+				</LabelField>
+				<LabelField name="Наименование" id="22">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="24"/>
+					<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="25"/>
+				</LabelField>
+				<LabelField name="Рейтинг" id="98">
+					<DataPath>Список.Рейтинг</DataPath>
+					<ContextMenu name="РейтингКонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="РейтингРасширеннаяПодсказка" id="100"/>
+					<SelectedItemsActionsPanel name="РейтингПанельДействийВыделенныхСтрок" id="101"/>
+				</LabelField>
+				<LabelField name="Позиция" id="30">
+					<DataPath>Список.Позиция</DataPath>
+					<ContextMenu name="ПозицияКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПозицияРасширеннаяПодсказка" id="32"/>
+					<SelectedItemsActionsPanel name="ПозицияПанельДействийВыделенныхСтрок" id="33"/>
+				</LabelField>
+				<LabelField name="Возраст" id="90">
+					<DataPath>Список.Возраст</DataPath>
+					<ContextMenu name="ВозрастКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="92"/>
+					<SelectedItemsActionsPanel name="ВозрастПанельДействийВыделенныхСтрок" id="93"/>
+				</LabelField>
+				<LabelField name="Гражданство" id="86">
+					<DataPath>Список.Гражданство</DataPath>
+					<ContextMenu name="ГражданствоКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ГражданствоРасширеннаяПодсказка" id="88"/>
+					<SelectedItemsActionsPanel name="ГражданствоПанельДействийВыделенныхСтрок" id="89"/>
+				</LabelField>
+				<LabelField name="ИграРуками" id="74">
+					<DataPath>Список.ИграРуками</DataPath>
+					<ContextMenu name="ИграРукамиКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ИграРукамиРасширеннаяПодсказка" id="76"/>
+					<SelectedItemsActionsPanel name="ИграРукамиПанельДействийВыделенныхСтрок" id="77"/>
+				</LabelField>
+				<LabelField name="Реакция" id="70">
+					<DataPath>Список.Реакция</DataPath>
+					<ContextMenu name="РеакцияКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="РеакцияРасширеннаяПодсказка" id="72"/>
+					<SelectedItemsActionsPanel name="РеакцияПанельДействийВыделенныхСтрок" id="73"/>
+				</LabelField>
+				<LabelField name="ОдинНаОдин" id="94">
+					<DataPath>Список.ОдинНаОдин</DataPath>
+					<ContextMenu name="ОдинНаОдинКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ОдинНаОдинРасширеннаяПодсказка" id="96"/>
+					<SelectedItemsActionsPanel name="ОдинНаОдинПанельДействийВыделенныхСтрок" id="97"/>
+				</LabelField>
+				<LabelField name="Отбор" id="54">
+					<DataPath>Список.Отбор</DataPath>
+					<ContextMenu name="ОтборКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ОтборРасширеннаяПодсказка" id="56"/>
+					<SelectedItemsActionsPanel name="ОтборПанельДействийВыделенныхСтрок" id="57"/>
+				</LabelField>
+				<LabelField name="ВыборПозиции" id="58">
+					<DataPath>Список.ВыборПозиции</DataPath>
+					<ContextMenu name="ВыборПозицииКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ВыборПозицииРасширеннаяПодсказка" id="60"/>
+					<SelectedItemsActionsPanel name="ВыборПозицииПанельДействийВыделенныхСтрок" id="61"/>
+				</LabelField>
+				<LabelField name="Опека" id="78">
+					<DataPath>Список.Опека</DataPath>
+					<ContextMenu name="ОпекаКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ОпекаРасширеннаяПодсказка" id="80"/>
+					<SelectedItemsActionsPanel name="ОпекаПанельДействийВыделенныхСтрок" id="81"/>
+				</LabelField>
+				<LabelField name="Пас" id="42">
+					<DataPath>Список.Пас</DataPath>
+					<ContextMenu name="ПасКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ПасРасширеннаяПодсказка" id="44"/>
+					<SelectedItemsActionsPanel name="ПасПанельДействийВыделенныхСтрок" id="45"/>
+				</LabelField>
+				<LabelField name="Скорость" id="62">
+					<DataPath>Список.Скорость</DataPath>
+					<ContextMenu name="СкоростьКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СкоростьРасширеннаяПодсказка" id="64"/>
+					<SelectedItemsActionsPanel name="СкоростьПанельДействийВыделенныхСтрок" id="65"/>
+				</LabelField>
+				<LabelField name="Техника" id="46">
+					<DataPath>Список.Техника</DataPath>
+					<ContextMenu name="ТехникаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ТехникаРасширеннаяПодсказка" id="48"/>
+					<SelectedItemsActionsPanel name="ТехникаПанельДействийВыделенныхСтрок" id="49"/>
+				</LabelField>
+				<LabelField name="ИграБезМяча" id="66">
+					<DataPath>Список.ИграБезМяча</DataPath>
+					<ContextMenu name="ИграБезМячаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ИграБезМячаРасширеннаяПодсказка" id="68"/>
+					<SelectedItemsActionsPanel name="ИграБезМячаПанельДействийВыделенныхСтрок" id="69"/>
+				</LabelField>
+				<LabelField name="ВидениеПоля" id="50">
+					<DataPath>Список.ВидениеПоля</DataPath>
+					<ContextMenu name="ВидениеПоляКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ВидениеПоляРасширеннаяПодсказка" id="52"/>
+					<SelectedItemsActionsPanel name="ВидениеПоляПанельДействийВыделенныхСтрок" id="53"/>
+				</LabelField>
+				<LabelField name="Удар" id="82">
+					<DataPath>Список.Удар</DataPath>
+					<ContextMenu name="УдарКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="УдарРасширеннаяПодсказка" id="84"/>
+					<SelectedItemsActionsPanel name="УдарПанельДействийВыделенныхСтрок" id="85"/>
+				</LabelField>
+				<LabelField name="Завершение" id="38">
+					<DataPath>Список.Завершение</DataPath>
+					<ContextMenu name="ЗавершениеКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ЗавершениеРасширеннаяПодсказка" id="40"/>
+					<SelectedItemsActionsPanel name="ЗавершениеПанельДействийВыделенныхСтрок" id="41"/>
+				</LabelField>
+				<LabelField name="Дриблинг" id="34">
+					<DataPath>Список.Дриблинг</DataPath>
+					<ContextMenu name="ДриблингКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДриблингРасширеннаяПодсказка" id="36"/>
+					<SelectedItemsActionsPanel name="ДриблингПанельДействийВыделенныхСтрок" id="37"/>
+				</LabelField>
+				<CheckBoxField name="ЗавершилКарьеру" id="102">
+					<DataPath>Список.ЗавершилКарьеру</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗавершилКарьеруКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="ЗавершилКарьеруРасширеннаяПодсказка" id="104"/>
+					<SelectedItemsActionsPanel name="ЗавершилКарьеруПанельДействийВыделенныхСтрок" id="105"/>
+				</CheckBoxField>
+				<LabelField name="Ссылка" id="18">
+					<DataPath>Список.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="20"/>
+					<SelectedItemsActionsPanel name="СсылкаПанельДействийВыделенныхСтрок" id="21"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ref</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникФутболисты.Ссылка,
+	СправочникФутболисты.ПометкаУдаления,
+	СправочникФутболисты.Наименование,
+	СправочникФутболисты.ФутбольныйКлуб,
+	СправочникФутболисты.Позиция,
+	СправочникФутболисты.Дриблинг,
+	СправочникФутболисты.Завершение,
+	СправочникФутболисты.Пас,
+	СправочникФутболисты.Техника,
+	СправочникФутболисты.ВидениеПоля,
+	СправочникФутболисты.Отбор,
+	СправочникФутболисты.ВыборПозиции,
+	СправочникФутболисты.Скорость,
+	СправочникФутболисты.ИграБезМяча,
+	СправочникФутболисты.Реакция,
+	СправочникФутболисты.ИграРуками,
+	СправочникФутболисты.Опека,
+	СправочникФутболисты.Удар,
+	СправочникФутболисты.Гражданство,
+	СправочникФутболисты.Возраст,
+	СправочникФутболисты.ОдинНаОдин,
+	СправочникФутболисты.Рейтинг,
+	СправочникФутболисты.Потенциал,
+	СправочникФутболисты.ЗавершилКарьеру,
+	СправочникФутболисты.Фотография,
+	СправочникФутболисты.Предопределенный,
+	СправочникФутболисты.ИмяПредопределенныхДанных
+ИЗ
+	Справочник.Футболисты КАК СправочникФутболисты</QueryText>
+				<MainTable>Catalog.Футболисты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

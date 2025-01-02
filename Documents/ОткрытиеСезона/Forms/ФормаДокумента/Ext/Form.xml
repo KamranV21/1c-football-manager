@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Основное" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основное</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОсновноеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="Лига" id="7">
+					<DataPath>Объект.Лига</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛигаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЛигаРасширеннаяПодсказка" id="9"/>
+					<SelectedItemsActionsPanel name="ЛигаПанельДействийВыделенныхСтрок" id="10"/>
+				</InputField>
+				<InputField name="Сезон" id="11">
+					<DataPath>Объект.Сезон</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СезонКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="СезонРасширеннаяПодсказка" id="13"/>
+					<SelectedItemsActionsPanel name="СезонПанельДействийВыделенныхСтрок" id="14"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="16"/>
+			<ChildItems>
+				<Page name="ГруппаБюджетыКлубов" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Бюджеты клубов</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаБюджетыКлубовРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<Table name="БюджетыКлубов" id="19">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.БюджетыКлубов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="БюджетыКлубовКонтекстноеМеню" id="20"/>
+							<AutoCommandBar name="БюджетыКлубовКоманднаяПанель" id="21"/>
+							<ExtendedTooltip name="БюджетыКлубовРасширеннаяПодсказка" id="22"/>
+							<SearchStringAddition name="БюджетыКлубовСтрокаПоиска" id="23">
+								<AdditionSource>
+									<Item>БюджетыКлубов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БюджетыКлубовСтрокаПоискаКонтекстноеМеню" id="24"/>
+								<ExtendedTooltip name="БюджетыКлубовСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="БюджетыКлубовСостояниеПросмотра" id="26">
+								<AdditionSource>
+									<Item>БюджетыКлубов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БюджетыКлубовСостояниеПросмотраКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="БюджетыКлубовСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="БюджетыКлубовУправлениеПоиском" id="29">
+								<AdditionSource>
+									<Item>БюджетыКлубов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="БюджетыКлубовУправлениеПоискомКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="БюджетыКлубовУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="БюджетыКлубовПанельДействийВыделенныхСтрок" id="32"/>
+							<ChildItems>
+								<LabelField name="БюджетыКлубовНомерСтроки" id="34">
+									<DataPath>Объект.БюджетыКлубов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="БюджетыКлубовНомерСтрокиКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="БюджетыКлубовНомерСтрокиРасширеннаяПодсказка" id="36"/>
+									<SelectedItemsActionsPanel name="БюджетыКлубовНомерСтрокиПанельДействийВыделенныхСтрок" id="37"/>
+								</LabelField>
+								<InputField name="БюджетыКлубовФутбольныйКлуб" id="38">
+									<DataPath>Объект.БюджетыКлубов.ФутбольныйКлуб</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="БюджетыКлубовФутбольныйКлубКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="БюджетыКлубовФутбольныйКлубРасширеннаяПодсказка" id="40"/>
+									<SelectedItemsActionsPanel name="БюджетыКлубовФутбольныйКлубПанельДействийВыделенныхСтрок" id="41"/>
+								</InputField>
+								<InputField name="БюджетыКлубовОбщийБюджет" id="155">
+									<DataPath>Объект.БюджетыКлубов.ОбщийБюджет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="БюджетыКлубовОбщийБюджетКонтекстноеМеню" id="156"/>
+									<ExtendedTooltip name="БюджетыКлубовОбщийБюджетРасширеннаяПодсказка" id="157"/>
+									<SelectedItemsActionsPanel name="БюджетыКлубовОбщийБюджетПанельДействийВыделенныхСтрок" id="158"/>
+								</InputField>
+								<InputField name="БюджетыКлубовТрансферныйБюджет" id="42">
+									<DataPath>Объект.БюджетыКлубов.ТрансферныйБюджет</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="БюджетыКлубовТрансферныйБюджетКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="БюджетыКлубовТрансферныйБюджетРасширеннаяПодсказка" id="44"/>
+									<SelectedItemsActionsPanel name="БюджетыКлубовТрансферныйБюджетПанельДействийВыделенныхСтрок" id="45"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТрансфернаяСтоимость" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трансферная стоимость</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаТрансфернаяСтоимостьРасширеннаяПодсказка" id="47"/>
+					<ChildItems>
+						<Table name="ТрансфернаяСтоимость" id="48">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТрансфернаяСтоимость</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТрансфернаяСтоимостьКонтекстноеМеню" id="49"/>
+							<AutoCommandBar name="ТрансфернаяСтоимостьКоманднаяПанель" id="50">
+								<ChildItems>
+									<Button name="ТрансфернаяСтоимостьРассчитатьТрансфернуюСтоимость" id="129">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.РассчитатьТрансфернуюСтоимость</CommandName>
+										<ExtendedTooltip name="ТрансфернаяСтоимостьРассчитатьТрансфернуюСтоимостьРасширеннаяПодсказка" id="130"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТрансфернаяСтоимостьРасширеннаяПодсказка" id="51"/>
+							<SearchStringAddition name="ТрансфернаяСтоимостьСтрокаПоиска" id="52">
+								<AdditionSource>
+									<Item>ТрансфернаяСтоимость</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансфернаяСтоимостьСтрокаПоискаКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ТрансфернаяСтоимостьСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТрансфернаяСтоимостьСостояниеПросмотра" id="55">
+								<AdditionSource>
+									<Item>ТрансфернаяСтоимость</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансфернаяСтоимостьСостояниеПросмотраКонтекстноеМеню" id="56"/>
+								<ExtendedTooltip name="ТрансфернаяСтоимостьСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТрансфернаяСтоимостьУправлениеПоиском" id="58">
+								<AdditionSource>
+									<Item>ТрансфернаяСтоимость</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансфернаяСтоимостьУправлениеПоискомКонтекстноеМеню" id="59"/>
+								<ExtendedTooltip name="ТрансфернаяСтоимостьУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьПанельДействийВыделенныхСтрок" id="61"/>
+							<ChildItems>
+								<LabelField name="ТрансфернаяСтоимостьНомерСтроки" id="63">
+									<DataPath>Объект.ТрансфернаяСтоимость.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТрансфернаяСтоимостьНомерСтрокиКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьНомерСтрокиРасширеннаяПодсказка" id="65"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьНомерСтрокиПанельДействийВыделенныхСтрок" id="66"/>
+								</LabelField>
+								<InputField name="ТрансфернаяСтоимостьФутболист" id="67">
+									<DataPath>Объект.ТрансфернаяСтоимость.Футболист</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТрансфернаяСтоимостьФутболистКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьФутболистРасширеннаяПодсказка" id="69"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьФутболистПанельДействийВыделенныхСтрок" id="70"/>
+								</InputField>
+								<LabelField name="ТрансфернаяСтоимостьФутболистВозраст" id="139">
+									<DataPath>Объект.ТрансфернаяСтоимость.Футболист.Возраст</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТрансфернаяСтоимостьФутболистВозрастКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьФутболистВозрастРасширеннаяПодсказка" id="141"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьФутболистВозрастПанельДействийВыделенныхСтрок" id="142"/>
+								</LabelField>
+								<LabelField name="ТрансфернаяСтоимостьФутболистРейтинг" id="135">
+									<DataPath>Объект.ТрансфернаяСтоимость.Футболист.Рейтинг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТрансфернаяСтоимостьФутболистРейтингКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьФутболистРейтингРасширеннаяПодсказка" id="137"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьФутболистРейтингПанельДействийВыделенныхСтрок" id="138"/>
+								</LabelField>
+								<LabelField name="ТрансфернаяСтоимостьФутболистКоманда" id="131">
+									<DataPath>Объект.ТрансфернаяСтоимость.Футболист.ФутбольныйКлуб</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТрансфернаяСтоимостьФутболистКомандаКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьФутболистКомандаРасширеннаяПодсказка" id="133"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьФутболистКомандаПанельДействийВыделенныхСтрок" id="134"/>
+								</LabelField>
+								<InputField name="ТрансфернаяСтоимостьТрансфернаяСтоимость" id="71">
+									<DataPath>Объект.ТрансфернаяСтоимость.ТрансфернаяСтоимость</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТрансфернаяСтоимостьТрансфернаяСтоимостьКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="ТрансфернаяСтоимостьТрансфернаяСтоимостьРасширеннаяПодсказка" id="73"/>
+									<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьТрансфернаяСтоимостьПанельДействийВыделенныхСтрок" id="74"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОткрытиеСезона</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РассчитатьТрансфернуюСтоимость" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать трансферную стоимость</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать трансферную стоимость</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьТрансфернуюСтоимостьФутболистов</Action>
+		</Command>
+	</Commands>
+</Form>

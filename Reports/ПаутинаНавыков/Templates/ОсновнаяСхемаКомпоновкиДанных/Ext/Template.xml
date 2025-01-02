@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Футболист</dataPath>
+			<field>Футболист</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Футболист</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Значение</dataPath>
+			<field>Значение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Навык</dataPath>
+			<field>Навык</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Навык</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Футболисты.Ссылка КАК Футболист,
+	"Реакция" КАК Навык,
+	Футболисты.Реакция КАК Значение
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Игра руками",
+	Футболисты.ИграРуками
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Один на один",
+	Футболисты.ОдинНаОдин
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Отбор",
+	Футболисты.Отбор
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Выбор позиции",
+	Футболисты.ВыборПозиции
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Опека",
+	Футболисты.Опека
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Пас",
+	Футболисты.Пас
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Скорость",
+	Футболисты.Скорость
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Техника",
+	Футболисты.Техника
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Игра без мяча",
+	Футболисты.ИграБезМяча
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Видение поля",
+	Футболисты.ВидениеПоля
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Удар",
+	Футболисты.Удар
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Завершение",
+	Футболисты.Завершение
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	Футболисты.Ссылка,
+	"Дриблинг",
+	Футболисты.Дриблинг
+ИЗ
+	Справочник.Футболисты КАК Футболисты       
+	  
+ОБЪЕДИНИТЬ ВСЕ
+	  
+ВЫБРАТЬ
+	"Максимальные показатели" КАК Футболист,
+	"Реакция" КАК Навык,
+	100 КАК Значение
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Игра руками",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Один на один",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Отбор",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Выбор позиции",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Опека",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Пас",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Скорость",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Техника",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Игра без мяча",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Видение поля",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Удар",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Завершение",
+	100
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	"Максимальные показатели",
+	"Дриблинг",
+	100</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>Серия</dataPath>
+		<expression>100</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Серия</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>Значение</dataPath>
+		<expression>Сумма(Значение)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>ПаутинаНавыков</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Паутина навыков</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Значение</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Футболист</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>bdf29b62-f6a5-4659-a0a3-f8963ebe6872</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">RadarArea</dcscor:value>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы.РазмерПузырькаПоУмолчанию</dcscor:parameter>
+						<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы.МинимальныйРазмерПузырька</dcscor:parameter>
+						<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы.МаксимальныйРазмерПузырька</dcscor:parameter>
+						<dcscor:value xsi:type="xs:decimal">100</dcscor:value>
+					</dcscor:item>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Навык</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:series>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Футболист</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:series>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Column</dcscor:value>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы.ОсьЗначений</dcscor:parameter>
+							<dcscor:value xmlns:d8p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d8p1:ChartAxis">
+								<d8p1:maxValue xsi:type="xs:decimal">100</d8p1:maxValue>
+								<d8p1:maxValueDetectionMethod>UseValue</d8p1:maxValueDetectionMethod>
+							</dcscor:value>
+						</dcscor:item>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

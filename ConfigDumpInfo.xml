@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.21">
+	<ConfigVersions>
+		<Metadata name="AccumulationRegister.БюджетыФутбольныхКлубов" id="8802a842-5d65-41d2-9794-1e5587a3dc30" configVersion="4d96ed0d403335468e1ed9e16617057d00000000">
+			<Metadata name="AccumulationRegister.БюджетыФутбольныхКлубов.Resource.ОбщийБюджет" id="312cb74d-7367-468c-a3ee-b40e7fd24c0d"/>
+			<Metadata name="AccumulationRegister.БюджетыФутбольныхКлубов.Dimension.ФутбольныйКлуб" id="9f7f2a73-56a6-4b2a-931e-d1e414cca680"/>
+			<Metadata name="AccumulationRegister.БюджетыФутбольныхКлубов.Resource.ТрансферныйБюджет" id="f5e6c6ac-fac2-4ce1-82e1-f4055fb4c8f8"/>
+		</Metadata>
+		<Metadata name="AccumulationRegister.СтатистикаФутболистов" id="cbb08ec7-1931-4c7f-943e-ac2b875be238" configVersion="2aa0a8e64e28f748b429ce5c17c03e5b00000000">
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Dimension.Сезон" id="0b48bb20-3f8b-49a9-9b54-c6bef6d121d8"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Dimension.Лига" id="15ae3dc4-e6a0-47d4-ade1-a1b3bda9203e"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Resource.СыграноМатчей" id="3e2d8277-af8a-43d3-b827-dfce65ec6543"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Resource.ГолевыеПередачи" id="68e38303-fcbd-40d1-9965-1725c0e3a3ad"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Dimension.Футболист" id="acc9a24b-503c-4595-99d7-355be219980c"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Resource.Голы" id="ae8215ad-b4a7-4976-8589-7ed383ba4a41"/>
+			<Metadata name="AccumulationRegister.СтатистикаФутболистов.Dimension.ФутбольныйКлуб" id="feaf5b8b-5420-40a2-a001-f4f2a190dcec"/>
+		</Metadata>
+		<Metadata name="AccumulationRegister.Трансферы" id="819b7003-5a7c-4d7c-96b2-561501780ded" configVersion="433b90bea132a44bbd65409c666f458900000000">
+			<Metadata name="AccumulationRegister.Трансферы.Dimension.Футболист" id="1a906292-3309-40d9-ac5c-6d112cdf485d"/>
+			<Metadata name="AccumulationRegister.Трансферы.Dimension.КлубПокупатель" id="21ab4a07-99b7-4eb9-9e91-acbb4661086e"/>
+			<Metadata name="AccumulationRegister.Трансферы.Resource.СуммаТрансфера" id="df522457-b7c2-4c49-b24a-49aa7bfd7af9"/>
+			<Metadata name="AccumulationRegister.Трансферы.Dimension.КлубПродавец" id="ec7192fc-2c55-490b-b2e6-2b9c7862ec76"/>
+		</Metadata>
+		<Metadata name="AccumulationRegister.ТурнирнаяТаблица" id="5189a0f7-5e8b-4acc-86c8-856b68269ea2" configVersion="3b4d5ee6cf0e4a43bfc454295d09be4d00000000">
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Забито" id="45eec080-de61-4cdc-8248-837db80c4138"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Ничьи" id="634cf796-da86-435d-9975-6c969ff005f4"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Dimension.Сезон" id="64fe43e8-184c-4a3e-9fcb-e7be54f973ea"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Dimension.Лига" id="7a7a1440-59f3-4141-bdc7-ded82eb448db"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Выигрыши" id="95851c4b-14a9-4797-a80b-f35b118ba2f8"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.СыграноМатчей" id="9b7d553c-e3e1-4dfc-a2e2-2077bb4b63d9"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Dimension.ФутбольныйКлуб" id="ae438670-4d98-41aa-b245-afaadabd7882"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Порожения" id="eba8e4d9-b46f-4d26-af12-dfbb98286cea"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Очки" id="ec92e797-11e8-46d4-a24a-9b04ea6b2979"/>
+			<Metadata name="AccumulationRegister.ТурнирнаяТаблица.Resource.Пропущено" id="f008ed03-df52-4ce3-b97b-1cba686dd225"/>
+		</Metadata>
+		<Metadata name="Catalog.Лиги" id="7ccc0234-87b4-4939-b8fc-3d974fd0b9d5" configVersion="42dc70197c8b1f47b612384876cb22a400000000">
+			<Metadata name="Catalog.Лиги.TabularSection.МесяцаМатчей.Attribute.Месяц" id="2bd71de4-3eb0-4b3a-9e23-4e7400a7e917"/>
+			<Metadata name="Catalog.Лиги.TabularSection.ТрансферныеОкна" id="51418410-2d6a-47e4-879b-2f4d7dd17e64"/>
+			<Metadata name="Catalog.Лиги.TabularSection.МесяцаМатчей" id="5c9865ec-9549-4ba6-aed2-8a1d22a96c20"/>
+			<Metadata name="Catalog.Лиги.TabularSection.ТрансферныеОкна.Attribute.ДатаНачала" id="60f298b5-1e8c-4075-89a8-d73d3d182536"/>
+			<Metadata name="Catalog.Лиги.TabularSection.ТрансферныеОкна.Attribute.ДатаОкончания" id="97e5a9fa-b603-44fb-9b19-906ed7638291"/>
+			<Metadata name="Catalog.Лиги.Attribute.ТрансферноеОкноОткрыто" id="fdd6c8d7-0cc8-4f84-8b4a-ffd50438ac82"/>
+		</Metadata>
+		<Metadata name="Catalog.Лиги.Form.ФормаЭлемента" id="2911eefd-4ea1-4752-b928-beb4f3fc1320" configVersion="80f62304a961fc4bb14803fa0b1b4d4700000000"/>
+		<Metadata name="Catalog.Лиги.Form.ФормаЭлемента.Form" id="2911eefd-4ea1-4752-b928-beb4f3fc1320.0" configVersion="52bcaca584f10a4f986753d8013d9dac00000000"/>
+		<Metadata name="Catalog.Сезоны" id="18378808-8ce4-4d73-81fb-cd54a9b30a8a" configVersion="8fcade976d014d4780dc94f811c5742300000000">
+			<Metadata name="Catalog.Сезоны.Attribute.ДатаНачала" id="3db9ee63-1193-4f35-893f-c6cc89257787"/>
+		</Metadata>
+		<Metadata name="Catalog.Сезоны.Predefined" id="18378808-8ce4-4d73-81fb-cd54a9b30a8a.1c" configVersion="6a9535df1c32044a808c86e9515f5f5800000000"/>
+		<Metadata name="Catalog.СтраныМира" id="a2df53ed-16d3-4340-bf74-c8464b50db8a" configVersion="f1c6bbe372c3ee43953701351c5a757e00000000"/>
+		<Metadata name="Catalog.СтраныМира.Predefined" id="a2df53ed-16d3-4340-bf74-c8464b50db8a.1c" configVersion="2800623ec8972f479f3309da051be5ac00000000"/>
+		<Metadata name="Catalog.Футболисты" id="573890e1-4c15-494b-a007-70af718f35cb" configVersion="ed33a146093dfa4781f4df85208fe54600000000">
+			<Metadata name="Catalog.Футболисты.Attribute.Удар" id="0176a634-8df5-4163-9f11-dc0c85b7a75c"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Завершение" id="07f2f3e2-4da8-4936-a6cf-6598a8613ba6"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Потенциал" id="0dd426e8-8421-4471-902b-bf387eefde1c"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ВидениеПоля" id="1001ef68-ece5-4ef7-8015-dbaefe523890"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Фотография" id="1949b924-e68a-4825-8d5b-24acac9ee454"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ВыборПозиции" id="21def0d4-7c43-4765-8f20-019e00254342"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ОдинНаОдин" id="39733c0d-a6b7-45f4-ac09-fac6229d9e7f"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Позиция" id="44ecd3c9-7c71-45d8-a976-467d817e75e2"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Дриблинг" id="49a4b3e4-0fb9-4ee4-9c81-7ae8fc3f8f24"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Рейтинг" id="4cd2860e-0988-42cf-9464-9087c96ee4ed"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Реакция" id="6013ffe5-08fe-4e84-bf58-9783fbe08565"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ЗавершилКарьеру" id="657ddf3d-1645-431b-8f4e-6980ce2e0335"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Гражданство" id="7f09a4eb-9684-4297-b6ff-ede27a9ed34a"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Опека" id="9d6e8e2d-4c4a-4436-8182-5ed7f939f8c6"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Скорость" id="9e0d3ba8-d6e9-41e1-b0b1-0cd2f19f2b7a"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Пас" id="9f167011-62bf-4a19-87ab-e45e9cc56e0f"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Техника" id="a4c313cb-40e8-4854-84be-20cd34d3a6fc"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ИграРуками" id="a5d6cc57-b288-4435-9695-62bbdeaf3962"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ФутбольныйКлуб" id="ab35831b-9f18-4933-a311-bb2a9e8efb8b"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Отбор" id="dd4a5b56-ee84-417b-a5f2-a37ac3bd3e5e"/>
+			<Metadata name="Catalog.Футболисты.Attribute.ИграБезМяча" id="ee83c369-42cd-40c7-b63d-01b2b7ab8ee0"/>
+			<Metadata name="Catalog.Футболисты.Attribute.Возраст" id="fce0a6e9-ee8d-44b4-8b5c-fbf21c5081e2"/>
+		</Metadata>
+		<Metadata name="Catalog.Футболисты.Form.ФормаВыбора" id="59bd33f1-5b17-4d31-b1fd-80b0e2b91cb1" configVersion="63f4b9d58d530541855c3f1892dde69d00000000"/>
+		<Metadata name="Catalog.Футболисты.Form.ФормаВыбора.Form" id="59bd33f1-5b17-4d31-b1fd-80b0e2b91cb1.0" configVersion="037cdc3bffff19489dafb3711c1a78e100000000"/>
+		<Metadata name="Catalog.Футболисты.Form.ФормаСписка" id="8acc6b11-8315-4036-bfb6-47077d19ee88" configVersion="f915cc3e8e2d80438a3a17443728a99b00000000"/>
+		<Metadata name="Catalog.Футболисты.Form.ФормаСписка.Form" id="8acc6b11-8315-4036-bfb6-47077d19ee88.0" configVersion="f474b316ef2fd84ab9b4f61663fd118500000000"/>
+		<Metadata name="Catalog.Футболисты.Form.ФормаЭлемента" id="056579cd-9ea3-4b12-a19b-45b26838d832" configVersion="bb8cc4ee28a48143890280e8caa9a7b100000000"/>
+		<Metadata name="Catalog.Футболисты.Form.ФормаЭлемента.Form" id="056579cd-9ea3-4b12-a19b-45b26838d832.0" configVersion="7ebf890c437bc84c93492fd6e3e1c75000000000"/>
+		<Metadata name="Catalog.Футболисты.ObjectModule" id="573890e1-4c15-494b-a007-70af718f35cb.0" configVersion="6ab8c29402998f4aa3b6fe597c199a6a00000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы" id="41ac66db-2ef6-4354-baeb-75c76e0fca71" configVersion="eac8f7df9d6f1346b2d585555edc2e7c00000000">
+			<Metadata name="Catalog.ФутбольныеКлубы.TabularSection.СтартовыйСостав" id="2f984f4c-f2fc-4fd7-806d-275031c4a017"/>
+			<Metadata name="Catalog.ФутбольныеКлубы.TabularSection.СтартовыйСостав.Attribute.Позиция" id="435caa30-eb2e-4ae7-9e26-18bd0bb5a24a"/>
+			<Metadata name="Catalog.ФутбольныеКлубы.Attribute.Страна" id="8585b0f5-997f-4a68-ae77-f5c1bbcfe3eb"/>
+			<Metadata name="Catalog.ФутбольныеКлубы.TabularSection.СтартовыйСостав.Attribute.Футболист" id="aaea0397-5dd1-483f-b730-c0d54cf25b4f"/>
+			<Metadata name="Catalog.ФутбольныеКлубы.Attribute.Схема" id="dae2e1a3-2606-4b6e-a3c8-3afca0b5b6e0"/>
+			<Metadata name="Catalog.ФутбольныеКлубы.Attribute.Тактика" id="ea9c9f51-a0ff-4b2a-b272-1c7fe981a29d"/>
+		</Metadata>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаВыбора" id="73511832-d736-45c3-824c-bd7b3e0c3392" configVersion="cb5f8adb7a46594dbbf7b33fe3f39b3c00000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаВыбора.Form" id="73511832-d736-45c3-824c-bd7b3e0c3392.0" configVersion="5f764255bbbc3049a37816ccbed490af00000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаСписка" id="6790bab3-ca03-49bb-9318-5b119e52bfb1" configVersion="0c28d55ca7b967498bd234e97c3ee29000000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаСписка.Form" id="6790bab3-ca03-49bb-9318-5b119e52bfb1.0" configVersion="755d96829a54ea4e8b9faac5210245d300000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b" configVersion="9acfdf1a38b018449a1eb91711e8402d00000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.Form.ФормаЭлемента.Form" id="e370936d-54c2-4446-9f7b-4a45cf4f2a7b.0" configVersion="987cd2bfb3cd8b40aa959f1579faf08200000000"/>
+		<Metadata name="Catalog.ФутбольныеКлубы.ObjectModule" id="41ac66db-2ef6-4354-baeb-75c76e0fca71.0" configVersion="28817fa823c554468e33d5525d8e314b00000000"/>
+		<Metadata name="CommonForm.СтартИгры" id="cfec41fa-c833-45b4-a768-daf4e27c4cb5" configVersion="3513e141bb9f424eae7dce5370168fa600000000"/>
+		<Metadata name="CommonForm.СтартИгры.Form" id="cfec41fa-c833-45b4-a768-daf4e27c4cb5.0" configVersion="c4dc532ffae96246bfe209193303b56400000000"/>
+		<Metadata name="CommonModule.ИгровыеМеханики" id="ac36583b-f668-4d24-a003-37e5e0039163" configVersion="d5bf7cc0758ad247b2e51f6938d4811600000000"/>
+		<Metadata name="CommonModule.ИгровыеМеханики.Module" id="ac36583b-f668-4d24-a003-37e5e0039163.0" configVersion="b93bbfea35f3e540bb9b000b47c84c3c00000000"/>
+		<Metadata name="CommonModule.ИнициализацияДанных" id="06107cf3-c045-433e-be3c-5c6fbd20646d" configVersion="cc9d4cd1e6871b46be6c4c3c1cc6ee7f00000000"/>
+		<Metadata name="CommonModule.ИнициализацияДанных.Module" id="06107cf3-c045-433e-be3c-5c6fbd20646d.0" configVersion="8872ef571a60a540adf8a39be165f41c00000000"/>
+		<Metadata name="CommonModule.Интерфейс" id="434c24b4-87c0-46c7-bacd-19bc0b3b60e2" configVersion="099fa90c4b42744a8e843a602994504d00000000"/>
+		<Metadata name="CommonModule.Интерфейс.Module" id="434c24b4-87c0-46c7-bacd-19bc0b3b60e2.0" configVersion="e8ea42870af3f949b32f8693b863540b00000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения" id="15430851-0a65-40f2-837c-3dd611a6ed6a" configVersion="5c1ba2a7342c4d41abbc8a8f5160944600000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="15430851-0a65-40f2-837c-3dd611a6ed6a.0" configVersion="23e2e238441dcc4196b9ff1d1c9a017f00000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияВызовСервера" id="eb77b8c5-6362-457a-b06c-83b5a2c7451c" configVersion="cb5a6f61ddc25d4faeae60dabc6050c400000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияВызовСервера.Module" id="eb77b8c5-6362-457a-b06c-83b5a2c7451c.0" configVersion="5338ad3f80eca2448d8e661afc0afbf300000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер" id="c6a02345-d0a7-4063-b286-8aeeb9c7ec41" configVersion="6f3cdd2207721a40b0093773d4b84ce800000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначенияКлиентСервер.Module" id="c6a02345-d0a7-4063-b286-8aeeb9c7ec41.0" configVersion="14ed317ad2c2b845ab3461e4e7b37ed200000000"/>
+		<Metadata name="CommonModule.РаботаСJSON" id="1600be1f-f009-4a3c-9892-5be8c23fd748" configVersion="47e5e5f6e1a9c54ebc707a03bbfa631d00000000"/>
+		<Metadata name="CommonModule.РаботаСJSON.Module" id="1600be1f-f009-4a3c-9892-5be8c23fd748.0" configVersion="ad7099a893a7324aad80ac26230e070500000000"/>
+		<Metadata name="CommonModule.Трансферы" id="41377de4-65a8-4e65-b789-7769411424a9" configVersion="b5fccb8df9260b49a4da7f7846fa67ce00000000"/>
+		<Metadata name="CommonModule.Трансферы.Module" id="41377de4-65a8-4e65-b789-7769411424a9.0" configVersion="d2300fc13026e9448360a8aa4595ba0b00000000"/>
+		<Metadata name="CommonModule.Уведомления" id="96d0b8d8-8e4f-43bc-9c5d-23b0ba9e68f5" configVersion="8e8db4d2bff2124eab2790f671075f3c00000000"/>
+		<Metadata name="CommonModule.Уведомления.Module" id="96d0b8d8-8e4f-43bc-9c5d-23b0ba9e68f5.0" configVersion="8b044b23e0af3840a79c91a36c193fe500000000"/>
+		<Metadata name="CommonPicture.НеудачныйСезон" id="6a98d8c4-66bb-4dbd-95dc-15005c99b47a" configVersion="27c3c039659c714985df2f918b9f68b300000000"/>
+		<Metadata name="CommonPicture.НеудачныйСезон.Picture" id="6a98d8c4-66bb-4dbd-95dc-15005c99b47a.0" configVersion="2f52ac24eb200c4e832a5cbb0262d6fa00000000"/>
+		<Metadata name="CommonPicture.НормальныйСезон" id="08ea6b08-74f6-4db2-8586-4b153d51913d" configVersion="95e2dca391857a48bdca28c840b2ebed00000000"/>
+		<Metadata name="CommonPicture.НормальныйСезон.Picture" id="08ea6b08-74f6-4db2-8586-4b153d51913d.0" configVersion="0d2e1a5a2ce40d4bb8ee85831b21544800000000"/>
+		<Metadata name="CommonPicture.ПобедныйСезон" id="24d97513-7c0d-44dd-8ae6-5bb3d9a738ae" configVersion="988ba82aa8d7c849b9908d4fc84234f700000000"/>
+		<Metadata name="CommonPicture.ПобедныйСезон.Picture" id="24d97513-7c0d-44dd-8ae6-5bb3d9a738ae.0" configVersion="d1724fb372a47d40952656d884ee5cad00000000"/>
+		<Metadata name="CommonPicture.Схема343" id="5ecfcc3d-bb79-4eb1-b13f-4b3ad4019e9c" configVersion="383b815e97ac6f4d8a0d028593a878f500000000"/>
+		<Metadata name="CommonPicture.Схема343.Picture" id="5ecfcc3d-bb79-4eb1-b13f-4b3ad4019e9c.0" configVersion="9586aa31bc6b06478ae354d999f7df8a00000000"/>
+		<Metadata name="CommonPicture.Схема352" id="30d60f87-d18e-4ccd-961e-8a42db91a1f2" configVersion="5995bb24e0076c41b2415205e531d85b00000000"/>
+		<Metadata name="CommonPicture.Схема352.Picture" id="30d60f87-d18e-4ccd-961e-8a42db91a1f2.0" configVersion="5fb72b7f039bff49bcd3568ea105327a00000000"/>
+		<Metadata name="CommonPicture.Схема4231" id="27642560-1a4b-4310-b1ff-7497529cc476" configVersion="e2bd3bf637921549a5118a6bee35e2d600000000"/>
+		<Metadata name="CommonPicture.Схема4231.Picture" id="27642560-1a4b-4310-b1ff-7497529cc476.0" configVersion="386ac60817f21341a7cf65b7571fc2b200000000"/>
+		<Metadata name="CommonPicture.Схема433" id="7b54bddb-d66a-4b4c-8fab-2da8c7f2e3b5" configVersion="25e7611d3de4cd4b87606a3bf6ab39cf00000000"/>
+		<Metadata name="CommonPicture.Схема433.Picture" id="7b54bddb-d66a-4b4c-8fab-2da8c7f2e3b5.0" configVersion="05fb0d4447172a429882a28ea5b2e6c500000000"/>
+		<Metadata name="CommonPicture.Схема442" id="90edd402-7d0d-4804-a285-ee3f8472916a" configVersion="efbf6e93cf62a245b26bb5246b41991b00000000"/>
+		<Metadata name="CommonPicture.Схема442.Picture" id="90edd402-7d0d-4804-a285-ee3f8472916a.0" configVersion="adf06fdb066daf4ea5237c7461de23c300000000"/>
+		<Metadata name="CommonPicture.Схема442Ромб" id="7347a98e-755d-4656-be9f-e61be789b85c" configVersion="feea9abf2ed38c4599d7f177dd4aee0c00000000"/>
+		<Metadata name="CommonPicture.Схема442Ромб.Picture" id="7347a98e-755d-4656-be9f-e61be789b85c.0" configVersion="944e17a3887fec49ba6c6883486f46e100000000"/>
+		<Metadata name="CommonPicture.УдачныйСезон" id="21537205-603f-493a-b966-941d8848bbaa" configVersion="cd0afdc5ed15994faeb4c68d383c965500000000"/>
+		<Metadata name="CommonPicture.УдачныйСезон.Picture" id="21537205-603f-493a-b966-941d8848bbaa.0" configVersion="ac2fbd55227c214e99f7943767a7c86e00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста1" id="48ebfaa5-880e-4e46-86cc-454b9c63e23a" configVersion="9e36f059e68d4b4295a2ba0acb0c5b2800000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста1.Picture" id="48ebfaa5-880e-4e46-86cc-454b9c63e23a.0" configVersion="1958d47c169cdd40b95abd050890ccbc00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста10" id="f2925fa8-fee8-4a82-a370-433efe777919" configVersion="add6688965656c458ec0f8f332e3843900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста10.Picture" id="f2925fa8-fee8-4a82-a370-433efe777919.0" configVersion="c6221a7ede145d4ea040659eed6d5dfa00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста11" id="cd50bf46-ba1a-4838-af98-be28366d576c" configVersion="97244e0632e6c746967dcecfd94dbf7300000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста11.Picture" id="cd50bf46-ba1a-4838-af98-be28366d576c.0" configVersion="095e3353b06e0247b8a80b62a3b4c40400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста12" id="61fff221-ce4b-49e6-ad13-cba40103a505" configVersion="a15db320831d8d4b825bb8f69c82616300000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста12.Picture" id="61fff221-ce4b-49e6-ad13-cba40103a505.0" configVersion="c9c8b069b7cb874da799fac4576b3a4900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста13" id="f4f44e3a-aba2-452d-b50b-aa34e8f6bc40" configVersion="d74f29e447763342984e50c47d431bfe00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста13.Picture" id="f4f44e3a-aba2-452d-b50b-aa34e8f6bc40.0" configVersion="bb773d09cdba4543a8bf03fdebf8d82a00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста14" id="a94a37f7-7c68-42d9-9692-a703d718a0f7" configVersion="1ef2fe6208b63148bc947c2b27c9dfd900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста14.Picture" id="a94a37f7-7c68-42d9-9692-a703d718a0f7.0" configVersion="eb3440ea72d68544918f31163352302500000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста15" id="9e59fcd2-32eb-496b-977d-26555dae1d4a" configVersion="b3d0ed0909f1854aaf26c094aaadc06300000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста15.Picture" id="9e59fcd2-32eb-496b-977d-26555dae1d4a.0" configVersion="6beb352b2e2cce468194e576c8f5609700000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста16" id="23ee93a2-ff01-47b8-9bcc-91b590ba204c" configVersion="1d7a82a286011d40821f182836f72eb200000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста16.Picture" id="23ee93a2-ff01-47b8-9bcc-91b590ba204c.0" configVersion="3dc4ada75b9a804d80a742bdb0104cb000000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста17" id="97e62e4e-a169-4054-8dd2-8612b257ee04" configVersion="890eaafcf8296b4b8142d7ae6157e60400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста17.Picture" id="97e62e4e-a169-4054-8dd2-8612b257ee04.0" configVersion="fd1f7cad5f3bbc4ca4b12e76ea70581100000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста18" id="5b441ad5-e05b-491a-846a-0e1d01bd1ea6" configVersion="295a06304151c747ba43e3dac0007fc400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста18.Picture" id="5b441ad5-e05b-491a-846a-0e1d01bd1ea6.0" configVersion="8f485c3005812c4d84008979e7fe784800000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста19" id="f1923bb8-ca83-439a-893f-07abe2cadb8d" configVersion="baadc2be14f9c84a909c368367ce8dc300000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста19.Picture" id="f1923bb8-ca83-439a-893f-07abe2cadb8d.0" configVersion="114ff200d345794b97355746a61a954000000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста2" id="fb1fd7da-83f7-4054-b44d-e75e48c616ed" configVersion="74a5967df4dc5d45ac2639ff4c4afd9800000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста2.Picture" id="fb1fd7da-83f7-4054-b44d-e75e48c616ed.0" configVersion="24e50c56e1879548b3da68eaee4f43e500000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста20" id="387b0ddb-897e-455c-b64d-53af3f16e31f" configVersion="4280731ec8b55e418e62e42e82a002c400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста20.Picture" id="387b0ddb-897e-455c-b64d-53af3f16e31f.0" configVersion="f1c925843af0a649b85d3e896f247ce600000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста21" id="47cd1a8f-787f-4ad0-acec-f403657ac6d4" configVersion="f4f523774d21474d9d40d1b4f8c318f800000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста21.Picture" id="47cd1a8f-787f-4ad0-acec-f403657ac6d4.0" configVersion="134969592097eb409a72e901a1f5e13700000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста22" id="05bcf93f-02cc-4018-b580-6bf50dcc7dea" configVersion="3cd6c6c4281001459e2a9e9359b755a600000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста22.Picture" id="05bcf93f-02cc-4018-b580-6bf50dcc7dea.0" configVersion="6f6a1844afd0ae4f95a00062d48e24fb00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста23" id="b69fd85b-435a-4018-b1ad-d29c3b8cc67a" configVersion="c8c70cb55d90914599847dc4aae7691500000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста23.Picture" id="b69fd85b-435a-4018-b1ad-d29c3b8cc67a.0" configVersion="c7a5bd14b922cd458dd298f9fcea4cdb00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста24" id="726f52e1-ac12-4f68-b43f-8589ff61f839" configVersion="ed43d0b0893ec448b78f881d78cc79a400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста24.Picture" id="726f52e1-ac12-4f68-b43f-8589ff61f839.0" configVersion="51074a34bae71444a84903c8c6bf86e400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста25" id="c299a8fd-1476-4ef2-859b-3072c816d73d" configVersion="5bf4dd41b8fbed4c84b679c556617a7500000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста25.Picture" id="c299a8fd-1476-4ef2-859b-3072c816d73d.0" configVersion="1b2a22698059854f8256cdee8fbc193c00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста26" id="99af130d-2bf5-4aa1-b73e-534dc3e66ee4" configVersion="738724868934744490cda220effb971f00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста26.Picture" id="99af130d-2bf5-4aa1-b73e-534dc3e66ee4.0" configVersion="3ff2582fa5da5747ba74b6d036ce9a8000000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста27" id="31c0f0fa-e8e8-4a5a-a543-2b7142ecf7c3" configVersion="03b8dfb68101224ab4a22bd29d79388400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста27.Picture" id="31c0f0fa-e8e8-4a5a-a543-2b7142ecf7c3.0" configVersion="ad5e4b6d9646f4449bcaa30538e3674700000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста28" id="3b15cad5-c7d8-4220-9434-f626d786fb7b" configVersion="2a1698611ee4184bba9fb6050188e13e00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста28.Picture" id="3b15cad5-c7d8-4220-9434-f626d786fb7b.0" configVersion="d628f7891a7ad34fa8675852691b94d900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста29" id="381a0e35-af8c-4b43-9b95-390d7f2e82f7" configVersion="902d082d4e5a08439358bd8ef74c6bd000000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста29.Picture" id="381a0e35-af8c-4b43-9b95-390d7f2e82f7.0" configVersion="2cd3e4f2b80697439bef45d82ca8aad900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста3" id="7780afdd-cce6-4644-b55b-e568108ceaf4" configVersion="e60e55c1a6adbc4298110a711ccf4be900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста3.Picture" id="7780afdd-cce6-4644-b55b-e568108ceaf4.0" configVersion="b55342607325a94baad2822a1b775cec00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста30" id="cc7c86ae-b226-409a-b9e9-06f44dc51f92" configVersion="76357ae911eba243a458e5c4829b9c7900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста30.Picture" id="cc7c86ae-b226-409a-b9e9-06f44dc51f92.0" configVersion="c396511d857c834494eaf1942150150b00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста4" id="e363f867-6c46-4d0f-90fe-0a7b71f527ee" configVersion="647e78d76aee8d4eb1445caa36f5d80900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста4.Picture" id="e363f867-6c46-4d0f-90fe-0a7b71f527ee.0" configVersion="b0f8a8c2c98de94eafbba0f44719505500000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста5" id="0a3cd197-07c6-49a9-9769-332faca8cb32" configVersion="dfd7062153ba8041a3c6a13ed503352900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста5.Picture" id="0a3cd197-07c6-49a9-9769-332faca8cb32.0" configVersion="c5441e377bfbbd4bb87504f9e066ff4a00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста6" id="e908dd6e-5672-425d-8e3f-fa30fc93a7fb" configVersion="52a53a1744cfb741b05e609140d07fd900000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста6.Picture" id="e908dd6e-5672-425d-8e3f-fa30fc93a7fb.0" configVersion="a220b8600b4ea04fbe66fb7fac54d7df00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста7" id="1aaf9dbe-9f4b-47c3-b30d-43cea3ee0fa6" configVersion="74f1a88747d2324b981c956fe088ad0200000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста7.Picture" id="1aaf9dbe-9f4b-47c3-b30d-43cea3ee0fa6.0" configVersion="7ea4406dca36df4293e82c93af97116400000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста8" id="eb98c4cb-b2d6-4871-900f-404fb1cb4702" configVersion="49216f782a94014fbb04ff60fb619b7a00000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста8.Picture" id="eb98c4cb-b2d6-4871-900f-404fb1cb4702.0" configVersion="cd308f47c9d1fd4db2e455bd29da28f200000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста9" id="8182f0ac-abfc-4538-9eca-dc24a7ff9c85" configVersion="af5e5c5759115a4c8040ef04c7a5e79000000000"/>
+		<Metadata name="CommonPicture.ФотоФутболиста9.Picture" id="8182f0ac-abfc-4538-9eca-dc24a7ff9c85.0" configVersion="fb50588b0caec646a3aa8ff63027859b00000000"/>
+		<Metadata name="CommonTemplate.НачальныеДанные" id="9af0d234-0f7a-45e7-9b84-11782e9c6412" configVersion="3c75099b91b1344c89ec2481dda330d400000000"/>
+		<Metadata name="CommonTemplate.НачальныеДанные.Template" id="9af0d234-0f7a-45e7-9b84-11782e9c6412.0" configVersion="d28d9446defdde4d8e0e6b4a2f1407be00000000"/>
+		<Metadata name="Configuration.Конфигурация" id="ab0e4334-eda9-4c4d-a491-e410e882df68" configVersion="868b6bc428e62c428bbe26d705b2f11a00000000"/>
+		<Metadata name="Configuration.Конфигурация.HomePageWorkArea" id="000e19fd-9b8b-4b1c-931e-47fc7d8ea081.8" configVersion="12f953fbc82a91469d90dc5a3576841a00000000"/>
+		<Metadata name="Configuration.Конфигурация.MainSectionCommandInterface" id="000e19fd-9b8b-4b1c-931e-47fc7d8ea081.9" configVersion="c7324ba0eb5e0c49a4df6e89ed0e166300000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="000e19fd-9b8b-4b1c-931e-47fc7d8ea081.6" configVersion="7cdf6438774dcb49bea258ba2a49f14100000000"/>
+		<Metadata name="Constant.ДанныеИнициализированы" id="ced897fe-c992-43e5-90b1-401cbab1da63" configVersion="cac7c38bdaed9a4d814797b929557d7500000000"/>
+		<Metadata name="Constant.ИгроваяДата" id="d86de110-f724-44d0-8985-1cb96eaa8f70" configVersion="b27784f68c83d246a1ddf75c4234a8b900000000"/>
+		<Metadata name="Constant.ЛигаМенеджера" id="71ad338b-2ceb-4cab-b70a-3d8ab23f1e5f" configVersion="5bf4129a3001674b9316e88d2279142500000000"/>
+		<Metadata name="Constant.ТекущийСезон" id="581f61bc-9d27-4929-b121-7fda4b03bbd0" configVersion="66b5e30819a0ee41b12d14a774987b0000000000"/>
+		<Metadata name="Constant.ФутбольныйКлубМенеджера" id="cc306584-114f-4043-b546-a355622f6a59" configVersion="e7c863a516ca8344b3405dee0d0ce92700000000"/>
+		<Metadata name="DataProcessor.РабочийСтол" id="4e285783-ecc4-4ed7-8634-d8244b828be3" configVersion="1f4c6bf76568ee4891fffb1dcb9ff53300000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.ИтогиСезона" id="5dd655e1-8d14-4b9a-8d0f-9aa3f84fe15c" configVersion="b52fa6d6d9b2a7459790623cc549a7fd00000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.ИтогиСезона.Form" id="5dd655e1-8d14-4b9a-8d0f-9aa3f84fe15c.0" configVersion="dad0f7902d3ef549ba6b95fd48d19c3f00000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.РозыгрышИгровогоДня" id="12e6db1f-5e81-452f-8f4f-9300c6ab4f03" configVersion="cd471b8072f54244a1a99b8d97d5a68200000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.РозыгрышИгровогоДня.Form" id="12e6db1f-5e81-452f-8f4f-9300c6ab4f03.0" configVersion="5f2bcf52198e2043b46d9edbe65505fc00000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.Форма" id="8813f558-34f2-4760-b062-d758c4e1ca91" configVersion="c4a53017839c6a42900cf994d037a12100000000"/>
+		<Metadata name="DataProcessor.РабочийСтол.Form.Форма.Form" id="8813f558-34f2-4760-b062-d758c4e1ca91.0" configVersion="f255d7da7b6ad549b7cf416a64e22cd100000000"/>
+		<Metadata name="Document.ОткрытиеСезона" id="67db6305-e67c-4a17-b0ec-2725f36af7a2" configVersion="72b0452836a94840b4acda3638eb3b9f00000000">
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.ТрансфернаяСтоимость.Attribute.ТрансфернаяСтоимость" id="0ffab892-31eb-4672-a59e-fbf3b18408fc"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.СоставЛиги.Attribute.ФутбольныйКлуб" id="33a66194-9ca2-4deb-9e39-02499fa4e531"/>
+			<Metadata name="Document.ОткрытиеСезона.Attribute.Сезон" id="47d5f31b-cf29-4d3d-ba33-9194eb7c67ab"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.СоставЛиги" id="4e47e19f-5801-41f2-b9c8-5381b46e3e49"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.ТрансфернаяСтоимость" id="682d647d-a86b-44d4-82d1-8147a7ae09a2"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.БюджетыКлубов.Attribute.ФутбольныйКлуб" id="6cc9b460-1dc5-4f5a-8fb3-46273c72bd70"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.БюджетыКлубов" id="73b8d261-9273-4229-b246-b15c5d390ebf"/>
+			<Metadata name="Document.ОткрытиеСезона.Attribute.Лига" id="7ccb9482-06c3-4d68-95b4-5414690fac9b"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.БюджетыКлубов.Attribute.ТрансферныйБюджет" id="7d3b2ea3-aa6a-442a-994a-463fed72ebe2"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.ТрансфернаяСтоимость.Attribute.Футболист" id="c4d3993c-cd7e-44e1-934e-68b6b1f540c5"/>
+			<Metadata name="Document.ОткрытиеСезона.TabularSection.БюджетыКлубов.Attribute.ОбщийБюджет" id="f79a69bc-7553-4772-a6a7-4030b2a8c352"/>
+		</Metadata>
+		<Metadata name="Document.ОткрытиеСезона.Form.ФормаДокумента" id="72eca72a-f524-467d-82c6-2718293342de" configVersion="36cf3ab768749741bbe9a9fec81e286d00000000"/>
+		<Metadata name="Document.ОткрытиеСезона.Form.ФормаДокумента.Form" id="72eca72a-f524-467d-82c6-2718293342de.0" configVersion="d149b7086ada5547ab49d97417be4d3700000000"/>
+		<Metadata name="Document.ОткрытиеСезона.ManagerModule" id="67db6305-e67c-4a17-b0ec-2725f36af7a2.2" configVersion="3b889048e4608f4bb403636eff931f5f00000000"/>
+		<Metadata name="Document.ОткрытиеСезона.ObjectModule" id="67db6305-e67c-4a17-b0ec-2725f36af7a2.0" configVersion="e2752d7d5f4eb14d9b10993c16b3cc5700000000"/>
+		<Metadata name="Document.Трансфер" id="22df8344-0b07-44ff-ba8c-4492f80d3886" configVersion="43160487619d59409661f2d66a97e15d00000000">
+			<Metadata name="Document.Трансфер.TabularSection.ИсторияПереговоров" id="2f1d80e1-c380-4c4e-8b6f-e60b7f1af3da"/>
+			<Metadata name="Document.Трансфер.Attribute.Футболист" id="35638a56-63b6-45c3-b7e6-f2f7c5bbbfc1"/>
+			<Metadata name="Document.Трансфер.Attribute.ОтветноеПредложение" id="3aed35ba-f434-44bc-a005-36863800fa64"/>
+			<Metadata name="Document.Трансфер.Attribute.ОжидаетсяДействиеИгры" id="4f01a504-e595-4b37-979a-4fd099319bdf"/>
+			<Metadata name="Document.Трансфер.Command.ВсеТрансферы" id="61bccb37-531a-4cc8-93cc-cb24d96e4de8"/>
+			<Metadata name="Document.Трансфер.TabularSection.ИсторияПереговоров.Attribute.ТекстПредложения" id="64737446-0e69-47fe-b7c4-d98dac8aa5d8"/>
+			<Metadata name="Document.Трансфер.Attribute.КлубПокупатель" id="730198c8-5f1e-4c45-80e9-66139523f999"/>
+			<Metadata name="Document.Трансфер.Attribute.СтатусПереговоров" id="b2dcc31f-1343-441d-a192-d4340550fae0"/>
+			<Metadata name="Document.Трансфер.Attribute.КлубПродавец" id="c689d186-6bc4-4223-9310-69a49f523889"/>
+			<Metadata name="Document.Трансфер.Attribute.Предложение" id="cac5275c-d9c1-41bc-8d23-2b87cb1aa741"/>
+			<Metadata name="Document.Трансфер.TabularSection.ИсторияПереговоров.Attribute.ТекстОтвета" id="de08301d-a9f6-4af3-a261-63db4e9eae4b"/>
+		</Metadata>
+		<Metadata name="Document.Трансфер.Command.ВсеТрансферы.CommandModule" id="61bccb37-531a-4cc8-93cc-cb24d96e4de8.2" configVersion="87966b65b0d5a645a6b7c322aeae225600000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаДокумента" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef" configVersion="c5d9e05082d3254ca021753110b6834500000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаДокумента.Form" id="8876edc5-cb6c-4324-9ce4-0f3f5edb56ef.0" configVersion="31f528ccd144364fbb76c88ebfc0e45000000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаСписка" id="43ea79c8-cbb0-4b68-b47d-44d65c525d18" configVersion="9f7c079ca0d4bf4f9e1616698a8505ac00000000"/>
+		<Metadata name="Document.Трансфер.Form.ФормаСписка.Form" id="43ea79c8-cbb0-4b68-b47d-44d65c525d18.0" configVersion="ca7c839970545b4abf6e8915f141e33200000000"/>
+		<Metadata name="Document.Трансфер.ObjectModule" id="22df8344-0b07-44ff-ba8c-4492f80d3886.0" configVersion="485cd5c441d38e49a2b59690763554d900000000"/>
+		<Metadata name="Document.ФутбольныйМатч" id="7cee66c9-c41c-44b3-85bf-987f90f4acf7" configVersion="d42a8f859535a64fbb8b5265825120be00000000">
+			<Metadata name="Document.ФутбольныйМатч.TabularSection.Голы.Attribute.ГолеваяПередача" id="0e638238-6a6c-42bf-9f35-5c83283fcc88"/>
+			<Metadata name="Document.ФутбольныйМатч.TabularSection.Голы.Attribute.АвторГола" id="2a0e3bb8-eb6d-49d4-90c3-d0d47c83eeda"/>
+			<Metadata name="Document.ФутбольныйМатч.TabularSection.Голы.Attribute.Минута" id="2e3ce60a-e809-40ea-9407-e6961e674e90"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.Лига" id="4f1ca749-5e5e-4830-b906-9f6b9899f54d"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.ГолыХозяев" id="506704b4-1f41-4bb1-9fd1-c9847f4995bd"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.ОчкиГостей" id="59ec5e65-61e8-4b13-bd6c-b9f5711772db"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.ОчкиХозяев" id="5a7bb24a-3546-4a5f-866f-ed3a8e5a85ff"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.ИгровойДень" id="6148dc19-b94b-4e74-b807-1b84a239fdc4"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.Гости" id="9bd7b25d-652d-4906-88ae-58797255813f"/>
+			<Metadata name="Document.ФутбольныйМатч.TabularSection.Голы" id="aa6b563e-d7b5-4a2c-814b-a239ee12fdaa"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.Сезон" id="ae28a549-bca1-420e-8399-becdd206281e"/>
+			<Metadata name="Document.ФутбольныйМатч.TabularSection.Голы.Attribute.ФутбольныйКлуб" id="d918efe8-415f-45f0-b5b1-c6ed71bba13b"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.ГолыГостей" id="dd2e6458-ff26-46b6-9d69-bfba6701e645"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.Хозяева" id="f43598de-b7b3-4939-91b4-b5ab9a4f1269"/>
+			<Metadata name="Document.ФутбольныйМатч.Attribute.МатчЗавершен" id="fb14dba4-7151-4047-b5ee-0d82628ae8d1"/>
+		</Metadata>
+		<Metadata name="Document.ФутбольныйМатч.Form.ФормаДокумента" id="518356bb-d94f-4317-942e-479247cc76b5" configVersion="914d3fb1ec2be44fad35cf2b63c385d300000000"/>
+		<Metadata name="Document.ФутбольныйМатч.Form.ФормаДокумента.Form" id="518356bb-d94f-4317-942e-479247cc76b5.0" configVersion="dae30dc6603de64aa7e1382efe22df6100000000"/>
+		<Metadata name="Document.ФутбольныйМатч.ObjectModule" id="7cee66c9-c41c-44b3-85bf-987f90f4acf7.0" configVersion="717809493414404991e2f365aa7a987a00000000"/>
+		<Metadata name="Enum.ИгровыеПозиции" id="b9de3e0f-f142-4629-a3ca-bea78648cd98" configVersion="5525415f255fab45947b76787e00c5a200000000">
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ПравыйИнсайд" id="04e97501-92bf-4035-b041-35913e3cc1ce"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ОпорныйПолузащитник" id="1bfb5338-c9ad-4d4f-ac98-99703964c50f"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЦентральныйЗащитник" id="25514c44-a8b9-40d0-8953-968c1cc6b687"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЛевыйЗащитник" id="4ba15ca0-85bf-41d2-8ce3-bb5a3f8123bc"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ОттянутыйНападающий" id="53f4caed-4e83-4f2f-812b-e8f353edbc7b"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.Вратарь" id="6485c329-8f57-41af-8663-39f6691b65a0"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЦентральныйНападающий" id="882ff7fe-9c5b-487e-b437-6cda5da3a882"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЛевыйИнсайд" id="99674969-e233-41cf-826a-280b8df213dc"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЦентральныйПолузащитник" id="9b905398-5a3a-4e6d-bfab-858ac358c510"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.АтакующийПолузащитник" id="ae5721a0-be24-4062-9827-3ad5236d0574"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ЛевыйПолузащитник" id="c60096df-c2d7-4dbc-a9e2-a19f9eafea83"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ПравыйЗащитник" id="d4c4bf9d-5377-4430-862c-dbcb65e3d4bf"/>
+			<Metadata name="Enum.ИгровыеПозиции.EnumValue.ПравыйПолузащитник" id="de63ea8d-7f68-46bf-96a4-86b53dc17574"/>
+		</Metadata>
+		<Metadata name="Enum.ИгровыеСхемы" id="f16de76c-9de4-4c44-92a1-dd8b34aaaa49" configVersion="3c8e5baf6060574496c1de224405bb6a00000000">
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема442Ромб" id="00e2d094-6402-4b1a-9895-41075561a968"/>
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема352" id="035c49e5-ec3e-462c-97d4-47061489be5b"/>
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема4231" id="1393bdb7-2978-460f-8f15-162ae3e5253c"/>
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема343" id="17046257-98e9-4038-b729-34218881f828"/>
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема442" id="a6ce6caa-593f-441b-a5fb-79aa8365280a"/>
+			<Metadata name="Enum.ИгровыеСхемы.EnumValue.Схема433" id="c638d39c-bc91-46c7-86f1-887fd215a11d"/>
+		</Metadata>
+		<Metadata name="Enum.ИгровыеТактики" id="9a32ac4b-9bb1-4640-9961-4214b973ef31" configVersion="b2e3bfaf7b0cb64590063cd9d9334c7000000000">
+			<Metadata name="Enum.ИгровыеТактики.EnumValue.Защита" id="0903d90b-f9fb-4567-ba22-365517bf5e93"/>
+			<Metadata name="Enum.ИгровыеТактики.EnumValue.Сбалансированный" id="4478e4fd-3509-4a78-a42d-53fdbcfd599f"/>
+			<Metadata name="Enum.ИгровыеТактики.EnumValue.ВсеВАтаке" id="4aaf9934-d1a2-400b-be95-1ebdb2cd09ca"/>
+			<Metadata name="Enum.ИгровыеТактики.EnumValue.ВсеВЗащите" id="7389632b-a7ec-45f6-aee6-2586ca64390a"/>
+			<Metadata name="Enum.ИгровыеТактики.EnumValue.Атака" id="8473fa27-5d58-4b4a-a587-4cf7d44d191f"/>
+		</Metadata>
+		<Metadata name="Enum.РезультатМатча" id="55a4b373-35fc-4fa0-8885-7870024c14c9" configVersion="ea3509b34d6d9c4386b57b5146bac0d700000000">
+			<Metadata name="Enum.РезультатМатча.EnumValue.Победа" id="b17e2da4-1492-4ee4-bbed-489a52a740f0"/>
+			<Metadata name="Enum.РезультатМатча.EnumValue.Поражение" id="eed4509e-1480-4cfc-8400-066031fd0aed"/>
+			<Metadata name="Enum.РезультатМатча.EnumValue.Ничья" id="f9702636-8343-4b32-a0e2-b35bff028747"/>
+		</Metadata>
+		<Metadata name="Enum.СтатусПереговоров" id="301805a9-00cf-4b77-9132-a957f346cf2d" configVersion="a279fac959cab144ab5d6a333cfea81c00000000">
+			<Metadata name="Enum.СтатусПереговоров.EnumValue.ОтветноеПредложение" id="0a402d5c-3b12-41dd-aca9-9e46c718c794"/>
+			<Metadata name="Enum.СтатусПереговоров.EnumValue.Отклонено" id="d3c877df-e149-40ea-828c-dfcf59f92e9e"/>
+			<Metadata name="Enum.СтатусПереговоров.EnumValue.Принято" id="d8664744-6695-4c90-8362-d314e5e25682"/>
+		</Metadata>
+		<Metadata name="InformationRegister.ИсторияФутболистов" id="733ab232-a6eb-4314-81f8-954103a1a0f2" configVersion="d610020686487241af1db9d6e14dc96e00000000">
+			<Metadata name="InformationRegister.ИсторияФутболистов.Resource.ФутбольныйКлуб" id="117f1f5c-73c8-4830-a689-3f877bd557bb"/>
+			<Metadata name="InformationRegister.ИсторияФутболистов.Dimension.Футболист" id="e98f7855-f85c-4052-87b8-19c01b868073"/>
+		</Metadata>
+		<Metadata name="InformationRegister.РасписаниеЛиги" id="2d530f23-b7cb-48f9-8ae9-beb52c226e9a" configVersion="3c52910b4af65f4dac2f9ae136f36c4000000000">
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.Сезон" id="0a9a7d1c-a963-499f-b236-89853d6e363b"/>
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.Лига" id="7ce18954-bc17-45f2-b160-1897473598cd"/>
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.Дата" id="82a92f13-38dd-4292-bf93-cfe0e9a44fdf"/>
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.Хозяева" id="cc3f5634-84ae-4383-979c-bc51e0f8ef37"/>
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.Гости" id="f4d229a4-806d-47ba-b0ba-f95755d3d9b8"/>
+			<Metadata name="InformationRegister.РасписаниеЛиги.Dimension.ИгровойДень" id="f6a8ee2b-cf56-414a-bbbf-61edd285890a"/>
+		</Metadata>
+		<Metadata name="InformationRegister.РасстановкаСилНаНачалоСезона" id="d12e0a9d-ab5a-451e-8b1f-9ec6977d98fb" configVersion="e9ca382140f97044a2675366102fef8c00000000">
+			<Metadata name="InformationRegister.РасстановкаСилНаНачалоСезона.Dimension.ФутбольныйКлуб" id="2d681982-10db-4353-b65c-09ca3e2dbfab"/>
+			<Metadata name="InformationRegister.РасстановкаСилНаНачалоСезона.Resource.Позиция" id="3537b4f0-973e-49b9-ab2f-4e964ce2f515"/>
+			<Metadata name="InformationRegister.РасстановкаСилНаНачалоСезона.Dimension.Лига" id="783ee0a6-4e2a-4d9a-ad48-4efbc09b8b65"/>
+			<Metadata name="InformationRegister.РасстановкаСилНаНачалоСезона.Dimension.Сезон" id="87b0ab44-6f38-4269-8583-a09bc83356b6"/>
+		</Metadata>
+		<Metadata name="InformationRegister.СоставЛиги" id="b71a9de1-d3a6-4bd3-856b-911be3c02f28" configVersion="bada4a0fe38b1044be67d7fdf172099000000000">
+			<Metadata name="InformationRegister.СоставЛиги.Dimension.ФутбольныйКлуб" id="43e08d02-6088-405a-8795-d3a09b704852"/>
+			<Metadata name="InformationRegister.СоставЛиги.Dimension.Сезон" id="e47039b6-d6ea-4eef-9003-73788d259cc1"/>
+			<Metadata name="InformationRegister.СоставЛиги.Resource.Лига" id="e642dc2f-0e21-4c2f-ae10-0bd1d0c315a9"/>
+		</Metadata>
+		<Metadata name="InformationRegister.ТрансфернаяСтоимость" id="cd288bee-7199-451f-a797-dc9e154b6d37" configVersion="66081cd849e38241a7d4e9bd23fe84aa00000000">
+			<Metadata name="InformationRegister.ТрансфернаяСтоимость.Dimension.Футболист" id="515fd669-2318-4a61-90af-b3387dac43f1"/>
+			<Metadata name="InformationRegister.ТрансфернаяСтоимость.Resource.ТрансфернаяСтоимость" id="d751f6d1-0913-48c8-a9bb-8037a2a5ac2f"/>
+		</Metadata>
+		<Metadata name="InformationRegister.Уведомления" id="56edd50e-3a86-462d-a56c-6ff721570f9b" configVersion="d3f3dc362547914d9b4024369e6b7d5300000000">
+			<Metadata name="InformationRegister.Уведомления.Resource.Предмет" id="3625637e-4917-45e5-bded-f686a51be277"/>
+			<Metadata name="InformationRegister.Уведомления.Resource.Прочитано" id="6b562d7e-7514-4b5d-9493-96b229985dd1"/>
+			<Metadata name="InformationRegister.Уведомления.Resource.Текст" id="79d51867-d516-4eae-a0b0-a8d506053533"/>
+			<Metadata name="InformationRegister.Уведомления.Dimension.Идентификатор" id="c76be791-64fa-4693-95e5-e6ed37876564"/>
+			<Metadata name="InformationRegister.Уведомления.Attribute.Дата" id="df166e3b-2740-43df-9ea7-504bedd83b2a"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="1833fcad-ec22-4c89-9057-1f117a3f0679" configVersion="080f2dcbc610fb448f7d031aa321800d00000000"/>
+		<Metadata name="Report.АнализТрансферногоРынка" id="d2fb15bf-7611-4907-85ca-0b7a02997cdb" configVersion="935f1c82a03a23489b816d4acc4f27b500000000"/>
+		<Metadata name="Report.АнализТрансферногоРынка.Template.ОсновнаяСхемаКомпоновкиДанных" id="ecee573f-3c77-46ac-a40f-38fefdca89e2" configVersion="a28e49b87b56884eb056e8837e9b64f700000000"/>
+		<Metadata name="Report.АнализТрансферногоРынка.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="ecee573f-3c77-46ac-a40f-38fefdca89e2.0" configVersion="54dd279467d71744a3773193df39ea1300000000"/>
+		<Metadata name="Report.ПаутинаНавыков" id="3c1e9433-2abf-4317-a6f2-a6047d3bb7d0" configVersion="018d1fa772c5b44e934c5c7b1bdbe3c000000000"/>
+		<Metadata name="Report.ПаутинаНавыков.Template.ОсновнаяСхемаКомпоновкиДанных" id="0baabb99-1a14-4fcc-a0cf-e482f279c073" configVersion="beee3e4047312141824efbb4e346dd9e00000000"/>
+		<Metadata name="Report.ПаутинаНавыков.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="0baabb99-1a14-4fcc-a0cf-e482f279c073.0" configVersion="fb44b3d5306a8c48958e6b7e2abee17000000000"/>
+		<Metadata name="StyleItem.ЖирныйШрифт" id="0825151e-073e-4bce-aeae-40395edf1361" configVersion="92c7865fad62f747bd80396cbe88bad000000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

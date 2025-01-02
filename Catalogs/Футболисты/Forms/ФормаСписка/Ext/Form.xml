@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<ShowCommandBar>auto</ShowCommandBar>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5"/>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="СписокПанельДействийВыделенныхСтрок" id="16"/>
+			<ChildItems>
+				<LabelField name="ФутбольныйКлуб" id="22">
+					<DataPath>Список.ФутбольныйКлуб</DataPath>
+					<ContextMenu name="ФутбольныйКлубКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ФутбольныйКлубРасширеннаяПодсказка" id="24"/>
+					<SelectedItemsActionsPanel name="ФутбольныйКлубПанельДействийВыделенныхСтрок" id="25"/>
+				</LabelField>
+				<LabelField name="Наименование" id="18">
+					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="20"/>
+					<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="21"/>
+				</LabelField>
+				<LabelField name="Рейтинг" id="94">
+					<DataPath>Список.Рейтинг</DataPath>
+					<ContextMenu name="РейтингКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="РейтингРасширеннаяПодсказка" id="96"/>
+					<SelectedItemsActionsPanel name="РейтингПанельДействийВыделенныхСтрок" id="97"/>
+				</LabelField>
+				<LabelField name="ТрансфернаяСтоимость" id="115">
+					<DataPath>Список.ТрансфернаяСтоимость</DataPath>
+					<ContextMenu name="ТрансфернаяСтоимостьКонтекстноеМеню" id="116"/>
+					<ExtendedTooltip name="ТрансфернаяСтоимостьРасширеннаяПодсказка" id="117"/>
+					<SelectedItemsActionsPanel name="ТрансфернаяСтоимостьПанельДействийВыделенныхСтрок" id="118"/>
+				</LabelField>
+				<LabelField name="Позиция" id="26">
+					<DataPath>Список.Позиция</DataPath>
+					<ContextMenu name="ПозицияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПозицияРасширеннаяПодсказка" id="28"/>
+					<SelectedItemsActionsPanel name="ПозицияПанельДействийВыделенныхСтрок" id="29"/>
+				</LabelField>
+				<LabelField name="Возраст" id="86">
+					<DataPath>Список.Возраст</DataPath>
+					<ContextMenu name="ВозрастКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="88"/>
+					<SelectedItemsActionsPanel name="ВозрастПанельДействийВыделенныхСтрок" id="89"/>
+				</LabelField>
+				<LabelField name="Гражданство" id="82">
+					<DataPath>Список.Гражданство</DataPath>
+					<ContextMenu name="ГражданствоКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ГражданствоРасширеннаяПодсказка" id="84"/>
+					<SelectedItemsActionsPanel name="ГражданствоПанельДействийВыделенныхСтрок" id="85"/>
+				</LabelField>
+				<LabelField name="Реакция" id="66">
+					<DataPath>Список.Реакция</DataPath>
+					<ContextMenu name="РеакцияКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="РеакцияРасширеннаяПодсказка" id="68"/>
+					<SelectedItemsActionsPanel name="РеакцияПанельДействийВыделенныхСтрок" id="69"/>
+				</LabelField>
+				<LabelField name="ИграРуками" id="70">
+					<DataPath>Список.ИграРуками</DataPath>
+					<ContextMenu name="ИграРукамиКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ИграРукамиРасширеннаяПодсказка" id="72"/>
+					<SelectedItemsActionsPanel name="ИграРукамиПанельДействийВыделенныхСтрок" id="73"/>
+				</LabelField>
+				<LabelField name="ОдинНаОдин" id="90">
+					<DataPath>Список.ОдинНаОдин</DataPath>
+					<ContextMenu name="ОдинНаОдинКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ОдинНаОдинРасширеннаяПодсказка" id="92"/>
+					<SelectedItemsActionsPanel name="ОдинНаОдинПанельДействийВыделенныхСтрок" id="93"/>
+				</LabelField>
+				<LabelField name="Отбор" id="50">
+					<DataPath>Список.Отбор</DataPath>
+					<ContextMenu name="ОтборКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ОтборРасширеннаяПодсказка" id="52"/>
+					<SelectedItemsActionsPanel name="ОтборПанельДействийВыделенныхСтрок" id="53"/>
+				</LabelField>
+				<LabelField name="ВыборПозиции" id="54">
+					<DataPath>Список.ВыборПозиции</DataPath>
+					<ContextMenu name="ВыборПозицииКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ВыборПозицииРасширеннаяПодсказка" id="56"/>
+					<SelectedItemsActionsPanel name="ВыборПозицииПанельДействийВыделенныхСтрок" id="57"/>
+				</LabelField>
+				<LabelField name="Опека" id="74">
+					<DataPath>Список.Опека</DataPath>
+					<ContextMenu name="ОпекаКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ОпекаРасширеннаяПодсказка" id="76"/>
+					<SelectedItemsActionsPanel name="ОпекаПанельДействийВыделенныхСтрок" id="77"/>
+				</LabelField>
+				<LabelField name="Пас" id="38">
+					<DataPath>Список.Пас</DataPath>
+					<ContextMenu name="ПасКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПасРасширеннаяПодсказка" id="40"/>
+					<SelectedItemsActionsPanel name="ПасПанельДействийВыделенныхСтрок" id="41"/>
+				</LabelField>
+				<LabelField name="Скорость" id="58">
+					<DataPath>Список.Скорость</DataPath>
+					<ContextMenu name="СкоростьКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="СкоростьРасширеннаяПодсказка" id="60"/>
+					<SelectedItemsActionsPanel name="СкоростьПанельДействийВыделенныхСтрок" id="61"/>
+				</LabelField>
+				<LabelField name="Техника" id="42">
+					<DataPath>Список.Техника</DataPath>
+					<ContextMenu name="ТехникаКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ТехникаРасширеннаяПодсказка" id="44"/>
+					<SelectedItemsActionsPanel name="ТехникаПанельДействийВыделенныхСтрок" id="45"/>
+				</LabelField>
+				<LabelField name="ИграБезМяча" id="62">
+					<DataPath>Список.ИграБезМяча</DataPath>
+					<ContextMenu name="ИграБезМячаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ИграБезМячаРасширеннаяПодсказка" id="64"/>
+					<SelectedItemsActionsPanel name="ИграБезМячаПанельДействийВыделенныхСтрок" id="65"/>
+				</LabelField>
+				<LabelField name="ВидениеПоля" id="46">
+					<DataPath>Список.ВидениеПоля</DataPath>
+					<ContextMenu name="ВидениеПоляКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ВидениеПоляРасширеннаяПодсказка" id="48"/>
+					<SelectedItemsActionsPanel name="ВидениеПоляПанельДействийВыделенныхСтрок" id="49"/>
+				</LabelField>
+				<LabelField name="Удар" id="78">
+					<DataPath>Список.Удар</DataPath>
+					<ContextMenu name="УдарКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="УдарРасширеннаяПодсказка" id="80"/>
+					<SelectedItemsActionsPanel name="УдарПанельДействийВыделенныхСтрок" id="81"/>
+				</LabelField>
+				<LabelField name="Завершение" id="34">
+					<DataPath>Список.Завершение</DataPath>
+					<ContextMenu name="ЗавершениеКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ЗавершениеРасширеннаяПодсказка" id="36"/>
+					<SelectedItemsActionsPanel name="ЗавершениеПанельДействийВыделенныхСтрок" id="37"/>
+				</LabelField>
+				<LabelField name="Дриблинг" id="30">
+					<DataPath>Список.Дриблинг</DataPath>
+					<ContextMenu name="ДриблингКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ДриблингРасширеннаяПодсказка" id="32"/>
+					<SelectedItemsActionsPanel name="ДриблингПанельДействийВыделенныхСтрок" id="33"/>
+				</LabelField>
+				<CheckBoxField name="ЗавершилКарьеру" id="102">
+					<DataPath>Список.ЗавершилКарьеру</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗавершилКарьеруКонтекстноеМеню" id="103"/>
+					<ExtendedTooltip name="ЗавершилКарьеруРасширеннаяПодсказка" id="104"/>
+					<SelectedItemsActionsPanel name="ЗавершилКарьеруПанельДействийВыделенныхСтрок" id="105"/>
+				</CheckBoxField>
+				<LabelField name="Ссылка" id="109">
+					<DataPath>Список.Ссылка</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="111"/>
+					<SelectedItemsActionsPanel name="СсылкаПанельДействийВыделенныхСтрок" id="112"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникФутболисты.Ссылка КАК Ссылка,
+	СправочникФутболисты.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникФутболисты.Наименование КАК Наименование,
+	СправочникФутболисты.ФутбольныйКлуб КАК ФутбольныйКлуб,
+	СправочникФутболисты.Позиция КАК Позиция,
+	СправочникФутболисты.Дриблинг КАК Дриблинг,
+	СправочникФутболисты.Завершение КАК Завершение,
+	СправочникФутболисты.Пас КАК Пас,
+	СправочникФутболисты.Техника КАК Техника,
+	СправочникФутболисты.ВидениеПоля КАК ВидениеПоля,
+	СправочникФутболисты.Отбор КАК Отбор,
+	СправочникФутболисты.ВыборПозиции КАК ВыборПозиции,
+	СправочникФутболисты.Скорость КАК Скорость,
+	СправочникФутболисты.ИграБезМяча КАК ИграБезМяча,
+	СправочникФутболисты.Реакция КАК Реакция,
+	СправочникФутболисты.ИграРуками КАК ИграРуками,
+	СправочникФутболисты.Опека КАК Опека,
+	СправочникФутболисты.Удар КАК Удар,
+	СправочникФутболисты.Гражданство КАК Гражданство,
+	СправочникФутболисты.Возраст КАК Возраст,
+	СправочникФутболисты.ОдинНаОдин КАК ОдинНаОдин,
+	СправочникФутболисты.Рейтинг КАК Рейтинг,
+	СправочникФутболисты.Потенциал КАК Потенциал,
+	СправочникФутболисты.ЗавершилКарьеру КАК ЗавершилКарьеру,
+	СправочникФутболисты.Фотография КАК Фотография,
+	СправочникФутболисты.Предопределенный КАК Предопределенный,
+	СправочникФутболисты.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ТрансфернаяСтоимостьСрезПоследних.ТрансфернаяСтоимость КАК ТрансфернаяСтоимость
+ИЗ
+	Справочник.Футболисты КАК СправочникФутболисты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТрансфернаяСтоимость.СрезПоследних КАК ТрансфернаяСтоимостьСрезПоследних
+		ПО ТрансфернаяСтоимостьСрезПоследних.Футболист = СправочникФутболисты.Ссылка</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Позиция</dcssch:dataPath>
+					<dcssch:field>Позиция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Гражданство</dcssch:dataPath>
+					<dcssch:field>Гражданство</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФутбольныйКлуб</dcssch:dataPath>
+					<dcssch:field>ФутбольныйКлуб</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Фотография</dcssch:dataPath>
+					<dcssch:field>Фотография</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Реакция</dcssch:dataPath>
+					<dcssch:field>Реакция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пас</dcssch:dataPath>
+					<dcssch:field>Пас</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидениеПоля</dcssch:dataPath>
+					<dcssch:field>ВидениеПоля</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дриблинг</dcssch:dataPath>
+					<dcssch:field>Дриблинг</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Завершение</dcssch:dataPath>
+					<dcssch:field>Завершение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Техника</dcssch:dataPath>
+					<dcssch:field>Техника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЗавершилКарьеру</dcssch:dataPath>
+					<dcssch:field>ЗавершилКарьеру</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Отбор</dcssch:dataPath>
+					<dcssch:field>Отбор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Скорость</dcssch:dataPath>
+					<dcssch:field>Скорость</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВыборПозиции</dcssch:dataPath>
+					<dcssch:field>ВыборПозиции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Возраст</dcssch:dataPath>
+					<dcssch:field>Возраст</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИграБезМяча</dcssch:dataPath>
+					<dcssch:field>ИграБезМяча</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИграРуками</dcssch:dataPath>
+					<dcssch:field>ИграРуками</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Опека</dcssch:dataPath>
+					<dcssch:field>Опека</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Удар</dcssch:dataPath>
+					<dcssch:field>Удар</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОдинНаОдин</dcssch:dataPath>
+					<dcssch:field>ОдинНаОдин</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Рейтинг</dcssch:dataPath>
+					<dcssch:field>Рейтинг</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Потенциал</dcssch:dataPath>
+					<dcssch:field>Потенциал</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Футболист</dcssch:dataPath>
+					<dcssch:field>Футболист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТрансфернаяСтоимость</dcssch:dataPath>
+					<dcssch:field>ТрансфернаяСтоимость</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.Футболисты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelField name="Страна" id="11">
+			<DataPath>Объект.Страна</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СтранаКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="13"/>
+			<SelectedItemsActionsPanel name="СтранаПанельДействийВыделенныхСтрок" id="14"/>
+		</LabelField>
+		<Pages name="Страницы" id="115">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="116"/>
+			<ChildItems>
+				<Page name="СтраницаТактика" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тактика</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AutomaticallyScreenTypeSensitive</Group>
+					<ExtendedTooltip name="СтраницаТактикаРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТактикаЛево" id="121">
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТактикаЛевоРасширеннаяПодсказка" id="122"/>
+							<ChildItems>
+								<InputField name="Схема" id="15">
+									<DataPath>Объект.Схема</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СхемаКонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="СхемаРасширеннаяПодсказка" id="17"/>
+									<SelectedItemsActionsPanel name="СхемаПанельДействийВыделенныхСтрок" id="18"/>
+									<Events>
+										<Event name="OnChange">СхемаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="Тактика" id="19">
+									<DataPath>Объект.Тактика</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТактикаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ТактикаРасширеннаяПодсказка" id="21"/>
+									<SelectedItemsActionsPanel name="ТактикаПанельДействийВыделенныхСтрок" id="22"/>
+									<Events>
+										<Event name="OnChange">ТактикаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<LabelDecoration name="ПодсказкаПоТактике" id="190">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подсказка по тактике</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПодсказкаПоТактикеКонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="ПодсказкаПоТактикеРасширеннаяПодсказка" id="192"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТактикаПраво" id="123">
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТактикаПравоРасширеннаяПодсказка" id="124"/>
+							<ChildItems>
+								<PictureDecoration name="ИзображениеСхемы" id="58">
+									<Width>40</Width>
+									<Height>5</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изображение схемы</v8:content>
+										</v8:item>
+									</Title>
+									<PictureSize>Proportionally</PictureSize>
+									<ContextMenu name="ИзображениеСхемыКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ИзображениеСхемыРасширеннаяПодсказка" id="60"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСтартовыйСостав" id="117">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стартовый состав</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаСтартовыйСоставРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<Button name="ПодобратьСоставАвтоматически" id="196">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПодобратьСоставАвтоматически</CommandName>
+							<ExtendedTooltip name="ПодобратьСоставАвтоматическиРасширеннаяПодсказка" id="197"/>
+						</Button>
+						<Table name="СтартовыйСостав" id="23">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СтартовыйСостав</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+							</CommandSet>
+							<ShowCommandBar>false</ShowCommandBar>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтартовыйСоставКонтекстноеМеню" id="24"/>
+							<AutoCommandBar name="СтартовыйСоставКоманднаяПанель" id="25"/>
+							<ExtendedTooltip name="СтартовыйСоставРасширеннаяПодсказка" id="26"/>
+							<SearchStringAddition name="СтартовыйСоставСтрокаПоиска" id="27">
+								<AdditionSource>
+									<Item>СтартовыйСостав</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтартовыйСоставСтрокаПоискаКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="СтартовыйСоставСтрокаПоискаРасширеннаяПодсказка" id="29"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтартовыйСоставСостояниеПросмотра" id="30">
+								<AdditionSource>
+									<Item>СтартовыйСостав</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтартовыйСоставСостояниеПросмотраКонтекстноеМеню" id="31"/>
+								<ExtendedTooltip name="СтартовыйСоставСостояниеПросмотраРасширеннаяПодсказка" id="32"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтартовыйСоставУправлениеПоиском" id="33">
+								<AdditionSource>
+									<Item>СтартовыйСостав</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтартовыйСоставУправлениеПоискомКонтекстноеМеню" id="34"/>
+								<ExtendedTooltip name="СтартовыйСоставУправлениеПоискомРасширеннаяПодсказка" id="35"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="СтартовыйСоставПанельДействийВыделенныхСтрок" id="36"/>
+							<ChildItems>
+								<InputField name="СтартовыйСоставПозиция" id="42">
+									<DataPath>Объект.СтартовыйСостав.Позиция</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтартовыйСоставПозицияКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="СтартовыйСоставПозицияРасширеннаяПодсказка" id="44"/>
+									<SelectedItemsActionsPanel name="СтартовыйСоставПозицияПанельДействийВыделенныхСтрок" id="45"/>
+								</InputField>
+								<InputField name="СтартовыйСоставРейтинг" id="105">
+									<DataPath>Объект.СтартовыйСостав.Рейтинг</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтартовыйСоставРейтингКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="СтартовыйСоставРейтингРасширеннаяПодсказка" id="107"/>
+									<SelectedItemsActionsPanel name="СтартовыйСоставРейтингПанельДействийВыделенныхСтрок" id="108"/>
+								</InputField>
+								<InputField name="СтартовыйСоставФутболист" id="46">
+									<DataPath>Объект.СтартовыйСостав.Футболист</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтартовыйСоставФутболистКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="СтартовыйСоставФутболистРасширеннаяПодсказка" id="48"/>
+									<SelectedItemsActionsPanel name="СтартовыйСоставФутболистПанельДействийВыделенныхСтрок" id="49"/>
+									<Events>
+										<Event name="OnChange">СтартовыйСоставФутболистПриИзменении</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаВсеФутболисты" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все футболисты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница все футболисты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаВсеФутболистыРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<Table name="ВсеФутболисты" id="66">
+							<CommandBarLocation>None</CommandBarLocation>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ВсеФутболисты</DataPath>
+							<RowPictureDataPath>~ВсеФутболисты.DefaultPicture</RowPictureDataPath>
+							<ShowCommandBar>false</ShowCommandBar>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ВсеФутболистыКонтекстноеМеню" id="67"/>
+							<AutoCommandBar name="ВсеФутболистыКоманднаяПанель" id="68"/>
+							<ExtendedTooltip name="ВсеФутболистыРасширеннаяПодсказка" id="69"/>
+							<SearchStringAddition name="ВсеФутболистыСтрокаПоиска" id="70">
+								<AdditionSource>
+									<Item>ВсеФутболисты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеФутболистыСтрокаПоискаКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="ВсеФутболистыСтрокаПоискаРасширеннаяПодсказка" id="72"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВсеФутболистыСостояниеПросмотра" id="73">
+								<AdditionSource>
+									<Item>ВсеФутболисты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеФутболистыСостояниеПросмотраКонтекстноеМеню" id="74"/>
+								<ExtendedTooltip name="ВсеФутболистыСостояниеПросмотраРасширеннаяПодсказка" id="75"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВсеФутболистыУправлениеПоиском" id="76">
+								<AdditionSource>
+									<Item>ВсеФутболисты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВсеФутболистыУправлениеПоискомКонтекстноеМеню" id="77"/>
+								<ExtendedTooltip name="ВсеФутболистыУправлениеПоискомРасширеннаяПодсказка" id="78"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ВсеФутболистыПанельДействийВыделенныхСтрок" id="79"/>
+							<ChildItems>
+								<LabelField name="СкамейкаЗапасныхПозиция" id="89">
+									<DataPath>ВсеФутболисты.Позиция</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СкамейкаЗапасныхПозицияКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="СкамейкаЗапасныхПозицияРасширеннаяПодсказка" id="91"/>
+									<SelectedItemsActionsPanel name="СкамейкаЗапасныхПозицияПанельДействийВыделенныхСтрок" id="92"/>
+								</LabelField>
+								<LabelField name="СкамейкаЗапасныхФутболист" id="97">
+									<DataPath>ВсеФутболисты.Футболист</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СкамейкаЗапасныхФутболистКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="СкамейкаЗапасныхФутболистРасширеннаяПодсказка" id="99"/>
+									<SelectedItemsActionsPanel name="СкамейкаЗапасныхФутболистПанельДействийВыделенныхСтрок" id="100"/>
+								</LabelField>
+								<LabelField name="СкамейкаЗапасныхРейтинг" id="93">
+									<DataPath>ВсеФутболисты.Рейтинг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СкамейкаЗапасныхРейтингКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="СкамейкаЗапасныхРейтингРасширеннаяПодсказка" id="95"/>
+									<SelectedItemsActionsPanel name="СкамейкаЗапасныхРейтингПанельДействийВыделенныхСтрок" id="96"/>
+								</LabelField>
+								<LabelField name="СкамейкаЗапасныхВозраст" id="81">
+									<DataPath>ВсеФутболисты.Возраст</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СкамейкаЗапасныхВозрастКонтекстноеМеню" id="82"/>
+									<ExtendedTooltip name="СкамейкаЗапасныхВозрастРасширеннаяПодсказка" id="83"/>
+									<SelectedItemsActionsPanel name="СкамейкаЗапасныхВозрастПанельДействийВыделенныхСтрок" id="84"/>
+								</LabelField>
+								<LabelField name="СкамейкаЗапасныхГражданство" id="85">
+									<DataPath>ВсеФутболисты.Гражданство</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="СкамейкаЗапасныхГражданствоКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="СкамейкаЗапасныхГражданствоРасширеннаяПодсказка" id="87"/>
+									<SelectedItemsActionsPanel name="СкамейкаЗапасныхГражданствоПанельДействийВыделенныхСтрок" id="88"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаМатчи" id="125">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Матчи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница матчи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаМатчиРасширеннаяПодсказка" id="126"/>
+					<ChildItems>
+						<Table name="МатчиКоманды" id="127">
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>МатчиКоманды</DataPath>
+							<RowPictureDataPath>МатчиКоманды.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="МатчиКомандыКонтекстноеМеню" id="128"/>
+							<AutoCommandBar name="МатчиКомандыКоманднаяПанель" id="129"/>
+							<ExtendedTooltip name="МатчиКомандыРасширеннаяПодсказка" id="130"/>
+							<SearchStringAddition name="МатчиКомандыСтрокаПоиска" id="131">
+								<AdditionSource>
+									<Item>МатчиКоманды</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МатчиКомандыСтрокаПоискаКонтекстноеМеню" id="132"/>
+								<ExtendedTooltip name="МатчиКомандыСтрокаПоискаРасширеннаяПодсказка" id="133"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МатчиКомандыСостояниеПросмотра" id="134">
+								<AdditionSource>
+									<Item>МатчиКоманды</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МатчиКомандыСостояниеПросмотраКонтекстноеМеню" id="135"/>
+								<ExtendedTooltip name="МатчиКомандыСостояниеПросмотраРасширеннаяПодсказка" id="136"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МатчиКомандыУправлениеПоиском" id="137">
+								<AdditionSource>
+									<Item>МатчиКоманды</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МатчиКомандыУправлениеПоискомКонтекстноеМеню" id="138"/>
+								<ExtendedTooltip name="МатчиКомандыУправлениеПоискомРасширеннаяПодсказка" id="139"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="МатчиКомандыПанельДействийВыделенныхСтрок" id="140"/>
+							<ChildItems>
+								<LabelField name="МатчиКомандыСезон" id="158">
+									<DataPath>МатчиКоманды.Сезон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="МатчиКомандыСезонКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="МатчиКомандыСезонРасширеннаяПодсказка" id="160"/>
+									<SelectedItemsActionsPanel name="МатчиКомандыСезонПанельДействийВыделенныхСтрок" id="161"/>
+								</LabelField>
+								<LabelField name="МатчиКомандыЛига" id="154">
+									<DataPath>МатчиКоманды.Лига</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="МатчиКомандыЛигаКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="МатчиКомандыЛигаРасширеннаяПодсказка" id="156"/>
+									<SelectedItemsActionsPanel name="МатчиКомандыЛигаПанельДействийВыделенныхСтрок" id="157"/>
+								</LabelField>
+								<ColumnGroup name="МатчиКомандыГруппаСчет" id="170">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Счет</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="МатчиКомандыГруппаСчетРасширеннаяПодсказка" id="171"/>
+									<ChildItems>
+										<LabelField name="МатчиКомандыХозяева" id="166">
+											<DataPath>МатчиКоманды.Хозяева</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="МатчиКомандыХозяеваКонтекстноеМеню" id="167"/>
+											<ExtendedTooltip name="МатчиКомандыХозяеваРасширеннаяПодсказка" id="168"/>
+											<SelectedItemsActionsPanel name="МатчиКомандыХозяеваПанельДействийВыделенныхСтрок" id="169"/>
+										</LabelField>
+										<LabelField name="МатчиКомандыГолыХозяев" id="146">
+											<DataPath>МатчиКоманды.ГолыХозяев</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧН=0</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="МатчиКомандыГолыХозяевКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="МатчиКомандыГолыХозяевРасширеннаяПодсказка" id="148"/>
+											<SelectedItemsActionsPanel name="МатчиКомандыГолыХозяевПанельДействийВыделенныхСтрок" id="149"/>
+										</LabelField>
+										<LabelField name="МатчиКомандыГолыГостей" id="142">
+											<DataPath>МатчиКоманды.ГолыГостей</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧН=0</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="МатчиКомандыГолыГостейКонтекстноеМеню" id="143"/>
+											<ExtendedTooltip name="МатчиКомандыГолыГостейРасширеннаяПодсказка" id="144"/>
+											<SelectedItemsActionsPanel name="МатчиКомандыГолыГостейПанельДействийВыделенныхСтрок" id="145"/>
+										</LabelField>
+										<LabelField name="МатчиКомандыГости" id="150">
+											<DataPath>МатчиКоманды.Гости</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="МатчиКомандыГостиКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="МатчиКомандыГостиРасширеннаяПодсказка" id="152"/>
+											<SelectedItemsActionsPanel name="МатчиКомандыГостиПанельДействийВыделенныхСтрок" id="153"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="МатчиКомандыСсылка" id="162">
+									<DataPath>МатчиКоманды.Ссылка</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="МатчиКомандыСсылкаКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="МатчиКомандыСсылкаРасширеннаяПодсказка" id="164"/>
+									<SelectedItemsActionsPanel name="МатчиКомандыСсылкаПанельДействийВыделенныхСтрок" id="165"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ФутбольныеКлубы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.СтартовыйСостав">
+					<Column name="Рейтинг" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Рейтинг</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>2</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВсеФутболисты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все футболисты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Футболисты.Ссылка КАК Футболист,
+	Футболисты.Рейтинг КАК Рейтинг,
+	Футболисты.Позиция КАК Позиция,
+	Футболисты.Возраст КАК Возраст,
+	Футболисты.Гражданство КАК Гражданство
+ИЗ
+	Справочник.Футболисты КАК Футболисты
+ГДЕ
+	Футболисты.ФутбольныйКлуб = &amp;ФутбольныйКлуб
+
+УПОРЯДОЧИТЬ ПО
+	Позиция</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Возраст</dcssch:dataPath>
+					<dcssch:field>Возраст</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Футболист</dcssch:dataPath>
+					<dcssch:field>Футболист</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футболист</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Рейтинг</dcssch:dataPath>
+					<dcssch:field>Рейтинг</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Гражданство</dcssch:dataPath>
+					<dcssch:field>Гражданство</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Позиция</dcssch:dataPath>
+					<dcssch:field>Позиция</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ФутбольныйКлуб</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футбольный клуб</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="МатчиКоманды" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Матчи команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>МатчиКоманды.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ФутбольныйМатч.Лига КАК Лига,
+	ФутбольныйМатч.Сезон КАК Сезон,
+	ФутбольныйМатч.Хозяева КАК Хозяева,
+	ФутбольныйМатч.Гости КАК Гости,
+	ФутбольныйМатч.ГолыХозяев КАК ГолыХозяев,
+	ФутбольныйМатч.ГолыГостей КАК ГолыГостей,
+	ФутбольныйМатч.Ссылка КАК Ссылка
+ИЗ
+	Документ.ФутбольныйМатч КАК ФутбольныйМатч
+ГДЕ
+	(ФутбольныйМатч.Хозяева = &amp;ФутбольныйКлуб
+			ИЛИ ФутбольныйМатч.Гости = &amp;ФутбольныйКлуб)</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Лига</dcssch:dataPath>
+					<dcssch:field>Лига</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Гости</dcssch:dataPath>
+					<dcssch:field>Гости</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Хозяева</dcssch:dataPath>
+					<dcssch:field>Хозяева</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сезон</dcssch:dataPath>
+					<dcssch:field>Сезон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГолыХозяев</dcssch:dataPath>
+					<dcssch:field>ГолыХозяев</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГолыГостей</dcssch:dataPath>
+					<dcssch:field>ГолыГостей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОчкиГостей</dcssch:dataPath>
+					<dcssch:field>ОчкиГостей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатчЗавершен</dcssch:dataPath>
+					<dcssch:field>МатчЗавершен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОчкиХозяев</dcssch:dataPath>
+					<dcssch:field>ОчкиХозяев</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИгровойДень</dcssch:dataPath>
+					<dcssch:field>ИгровойДень</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Голы</dcssch:dataPath>
+					<dcssch:field>Голы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ФутбольныйКлуб</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футбольный клуб</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.ФутбольныйМатч</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="Сезон" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сезон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодобратьСоставАвтоматически" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать состав автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подобрать состав автоматически</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодобратьСоставАвтоматически</Action>
+		</Command>
+	</Commands>
+</Form>

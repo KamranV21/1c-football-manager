@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Наименование" id="1">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="4"/>
+		</InputField>
+		<InputField name="Владелец" id="5">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="7"/>
+			<SelectedItemsActionsPanel name="ВладелецПанельДействийВыделенныхСтрок" id="8"/>
+		</InputField>
+		<CheckBoxField name="ТрансферноеОкноОткрыто" id="9">
+			<DataPath>Объект.ТрансферноеОкноОткрыто</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ТрансферноеОкноОткрытоКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ТрансферноеОкноОткрытоРасширеннаяПодсказка" id="11"/>
+			<SelectedItemsActionsPanel name="ТрансферноеОкноОткрытоПанельДействийВыделенныхСтрок" id="12"/>
+		</CheckBoxField>
+		<Pages name="Страницы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Page name="ГруппаМесяцаМатчей" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Месяца матчей</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаМесяцаМатчейРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<Table name="МесяцаМатчей" id="17">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.МесяцаМатчей</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МесяцаМатчейКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="МесяцаМатчейКоманднаяПанель" id="19"/>
+							<ExtendedTooltip name="МесяцаМатчейРасширеннаяПодсказка" id="20"/>
+							<SearchStringAddition name="МесяцаМатчейСтрокаПоиска" id="21">
+								<AdditionSource>
+									<Item>МесяцаМатчей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МесяцаМатчейСтрокаПоискаКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="МесяцаМатчейСтрокаПоискаРасширеннаяПодсказка" id="23"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МесяцаМатчейСостояниеПросмотра" id="24">
+								<AdditionSource>
+									<Item>МесяцаМатчей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МесяцаМатчейСостояниеПросмотраКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="МесяцаМатчейСостояниеПросмотраРасширеннаяПодсказка" id="26"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МесяцаМатчейУправлениеПоиском" id="27">
+								<AdditionSource>
+									<Item>МесяцаМатчей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МесяцаМатчейУправлениеПоискомКонтекстноеМеню" id="28"/>
+								<ExtendedTooltip name="МесяцаМатчейУправлениеПоискомРасширеннаяПодсказка" id="29"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="МесяцаМатчейПанельДействийВыделенныхСтрок" id="30"/>
+							<ChildItems>
+								<LabelField name="МесяцаМатчейНомерСтроки" id="32">
+									<DataPath>Объект.МесяцаМатчей.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МесяцаМатчейНомерСтрокиКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="МесяцаМатчейНомерСтрокиРасширеннаяПодсказка" id="34"/>
+									<SelectedItemsActionsPanel name="МесяцаМатчейНомерСтрокиПанельДействийВыделенныхСтрок" id="35"/>
+								</LabelField>
+								<InputField name="МесяцаМатчейМесяц" id="36">
+									<DataPath>Объект.МесяцаМатчей.Месяц</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="МесяцаМатчейМесяцКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="МесяцаМатчейМесяцРасширеннаяПодсказка" id="38"/>
+									<SelectedItemsActionsPanel name="МесяцаМатчейМесяцПанельДействийВыделенныхСтрок" id="39"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТрансферныеОкна" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трансферные окна</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТрансферныеОкнаРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<Table name="ТрансферныеОкна" id="42">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТрансферныеОкна</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТрансферныеОкнаКонтекстноеМеню" id="43"/>
+							<AutoCommandBar name="ТрансферныеОкнаКоманднаяПанель" id="44"/>
+							<ExtendedTooltip name="ТрансферныеОкнаРасширеннаяПодсказка" id="45"/>
+							<SearchStringAddition name="ТрансферныеОкнаСтрокаПоиска" id="46">
+								<AdditionSource>
+									<Item>ТрансферныеОкна</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансферныеОкнаСтрокаПоискаКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ТрансферныеОкнаСтрокаПоискаРасширеннаяПодсказка" id="48"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТрансферныеОкнаСостояниеПросмотра" id="49">
+								<AdditionSource>
+									<Item>ТрансферныеОкна</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансферныеОкнаСостояниеПросмотраКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ТрансферныеОкнаСостояниеПросмотраРасширеннаяПодсказка" id="51"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТрансферныеОкнаУправлениеПоиском" id="52">
+								<AdditionSource>
+									<Item>ТрансферныеОкна</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТрансферныеОкнаУправлениеПоискомКонтекстноеМеню" id="53"/>
+								<ExtendedTooltip name="ТрансферныеОкнаУправлениеПоискомРасширеннаяПодсказка" id="54"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ТрансферныеОкнаПанельДействийВыделенныхСтрок" id="55"/>
+							<ChildItems>
+								<LabelField name="ТрансферныеОкнаНомерСтроки" id="57">
+									<DataPath>Объект.ТрансферныеОкна.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТрансферныеОкнаНомерСтрокиКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="ТрансферныеОкнаНомерСтрокиРасширеннаяПодсказка" id="59"/>
+									<SelectedItemsActionsPanel name="ТрансферныеОкнаНомерСтрокиПанельДействийВыделенныхСтрок" id="60"/>
+								</LabelField>
+								<InputField name="ТрансферныеОкнаДатаНачала" id="61">
+									<DataPath>Объект.ТрансферныеОкна.ДатаНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТрансферныеОкнаДатаНачалаКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="ТрансферныеОкнаДатаНачалаРасширеннаяПодсказка" id="63"/>
+									<SelectedItemsActionsPanel name="ТрансферныеОкнаДатаНачалаПанельДействийВыделенныхСтрок" id="64"/>
+								</InputField>
+								<InputField name="ТрансферныеОкнаДатаОкончания" id="65">
+									<DataPath>Объект.ТрансферныеОкна.ДатаОкончания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТрансферныеОкнаДатаОкончанияКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ТрансферныеОкнаДатаОкончанияРасширеннаяПодсказка" id="67"/>
+									<SelectedItemsActionsPanel name="ТрансферныеОкнаДатаОкончанияПанельДействийВыделенныхСтрок" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Лиги</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

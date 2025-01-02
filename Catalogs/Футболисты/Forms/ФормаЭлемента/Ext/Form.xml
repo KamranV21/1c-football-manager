@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаГоризонтальная" id="83">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОсновное" id="85">
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<PictureField name="АдресФотографии" id="101">
+							<DataPath>АдресФотографии</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>5</Width>
+							<Height>4</Height>
+							<PictureSize>Proportionally</PictureSize>
+							<ContextMenu name="АдресФотографииКонтекстноеМеню" id="102"/>
+							<ExtendedTooltip name="АдресФотографииРасширеннаяПодсказка" id="103"/>
+							<SelectedItemsActionsPanel name="АдресФотографииПанельДействийВыделенныхСтрок" id="104"/>
+						</PictureField>
+						<LabelField name="Рейтинг" id="79">
+							<DataPath>Объект.Рейтинг</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Font ref="style:TitleLevel1" kind="StyleItem"/>
+							<ContextMenu name="РейтингКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="РейтингРасширеннаяПодсказка" id="81"/>
+							<SelectedItemsActionsPanel name="РейтингПанельДействийВыделенныхСтрок" id="82"/>
+						</LabelField>
+						<LabelField name="Команда" id="7">
+							<DataPath>Объект.ФутбольныйКлуб</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомандаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КомандаРасширеннаяПодсказка" id="9"/>
+							<SelectedItemsActionsPanel name="КомандаПанельДействийВыделенныхСтрок" id="10"/>
+						</LabelField>
+						<LabelField name="Позиция" id="11">
+							<DataPath>Объект.Позиция</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПозицияКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ПозицияРасширеннаяПодсказка" id="13"/>
+							<SelectedItemsActionsPanel name="ПозицияПанельДействийВыделенныхСтрок" id="14"/>
+						</LabelField>
+						<LabelField name="Возраст" id="71">
+							<DataPath>Объект.Возраст</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВозрастКонтекстноеМеню" id="72"/>
+							<ExtendedTooltip name="ВозрастРасширеннаяПодсказка" id="73"/>
+							<SelectedItemsActionsPanel name="ВозрастПанельДействийВыделенныхСтрок" id="74"/>
+						</LabelField>
+						<LabelField name="Гражданство" id="67">
+							<DataPath>Объект.Гражданство</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ГражданствоКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ГражданствоРасширеннаяПодсказка" id="69"/>
+							<SelectedItemsActionsPanel name="ГражданствоПанельДействийВыделенныхСтрок" id="70"/>
+						</LabelField>
+						<Button name="Трансфер" id="99">
+							<Type>UsualButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.Трансфер</CommandName>
+							<ButtonImportance>Main</ButtonImportance>
+							<ExtendedTooltip name="ТрансферРасширеннаяПодсказка" id="100"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<SpreadSheetDocumentField name="ПаутинаНавыков" id="95">
+					<DataPath>ПаутинаНавыков</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>25</Width>
+					<Height>8</Height>
+					<ContextMenu name="ПаутинаНавыковКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ПаутинаНавыковРасширеннаяПодсказка" id="97"/>
+					<SelectedItemsActionsPanel name="ПаутинаНавыковПанельДействийВыделенныхСтрок" id="98"/>
+				</SpreadSheetDocumentField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Навыки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Навыки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ScrollOnCompress>true</ScrollOnCompress>
+			<ExtendedTooltip name="НавыкиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНавыкиВратаря" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вратарь</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа навыки вратаря</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНавыкиВратаряРасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<LabelField name="Реакция" id="51">
+							<DataPath>Объект.Реакция</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="РеакцияКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="РеакцияРасширеннаяПодсказка" id="53"/>
+							<SelectedItemsActionsPanel name="РеакцияПанельДействийВыделенныхСтрок" id="54"/>
+						</LabelField>
+						<LabelField name="ИграРуками" id="55">
+							<DataPath>Объект.ИграРуками</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ИграРукамиКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ИграРукамиРасширеннаяПодсказка" id="57"/>
+							<SelectedItemsActionsPanel name="ИграРукамиПанельДействийВыделенныхСтрок" id="58"/>
+						</LabelField>
+						<LabelField name="ОдинНаОдин" id="75">
+							<DataPath>Объект.ОдинНаОдин</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ОдинНаОдинКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ОдинНаОдинРасширеннаяПодсказка" id="77"/>
+							<SelectedItemsActionsPanel name="ОдинНаОдинПанельДействийВыделенныхСтрок" id="78"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="НавыкиЗащиты" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Защита</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навыки защиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НавыкиЗащитыРасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<LabelField name="Отбор" id="35">
+							<DataPath>Объект.Отбор</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ОтборКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОтборРасширеннаяПодсказка" id="37"/>
+							<SelectedItemsActionsPanel name="ОтборПанельДействийВыделенныхСтрок" id="38"/>
+						</LabelField>
+						<LabelField name="ВыборПозиции" id="39">
+							<DataPath>Объект.ВыборПозиции</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ВыборПозицииКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="ВыборПозицииРасширеннаяПодсказка" id="41"/>
+							<SelectedItemsActionsPanel name="ВыборПозицииПанельДействийВыделенныхСтрок" id="42"/>
+						</LabelField>
+						<LabelField name="Опека" id="59">
+							<DataPath>Объект.Опека</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ОпекаКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="ОпекаРасширеннаяПодсказка" id="61"/>
+							<SelectedItemsActionsPanel name="ОпекаПанельДействийВыделенныхСтрок" id="62"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="НавыкиПолузащиты" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полузащита</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навыки полузащиты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НавыкиПолузащитыРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<LabelField name="Пас" id="23">
+							<DataPath>Объект.Пас</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ПасКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="ПасРасширеннаяПодсказка" id="25"/>
+							<SelectedItemsActionsPanel name="ПасПанельДействийВыделенныхСтрок" id="26"/>
+						</LabelField>
+						<LabelField name="Скорость" id="43">
+							<DataPath>Объект.Скорость</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="СкоростьКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="СкоростьРасширеннаяПодсказка" id="45"/>
+							<SelectedItemsActionsPanel name="СкоростьПанельДействийВыделенныхСтрок" id="46"/>
+						</LabelField>
+						<LabelField name="Техника" id="27">
+							<DataPath>Объект.Техника</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ТехникаКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ТехникаРасширеннаяПодсказка" id="29"/>
+							<SelectedItemsActionsPanel name="ТехникаПанельДействийВыделенныхСтрок" id="30"/>
+						</LabelField>
+						<LabelField name="ИграБезМяча" id="47">
+							<DataPath>Объект.ИграБезМяча</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ИграБезМячаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ИграБезМячаРасширеннаяПодсказка" id="49"/>
+							<SelectedItemsActionsPanel name="ИграБезМячаПанельДействийВыделенныхСтрок" id="50"/>
+						</LabelField>
+						<LabelField name="ВидениеПоля" id="31">
+							<DataPath>Объект.ВидениеПоля</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ВидениеПоляКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ВидениеПоляРасширеннаяПодсказка" id="33"/>
+							<SelectedItemsActionsPanel name="ВидениеПоляПанельДействийВыделенныхСтрок" id="34"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="НавыкиНападающего" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нападение</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навыки нападающего</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НавыкиНападающегоРасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<LabelField name="Удар" id="63">
+							<DataPath>Объект.Удар</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="УдарКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="УдарРасширеннаяПодсказка" id="65"/>
+							<SelectedItemsActionsPanel name="УдарПанельДействийВыделенныхСтрок" id="66"/>
+						</LabelField>
+						<LabelField name="Завершение" id="19">
+							<DataPath>Объект.Завершение</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ЗавершениеКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ЗавершениеРасширеннаяПодсказка" id="21"/>
+							<SelectedItemsActionsPanel name="ЗавершениеПанельДействийВыделенныхСтрок" id="22"/>
+						</LabelField>
+						<LabelField name="Дриблинг" id="15">
+							<DataPath>Объект.Дриблинг</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<Width>7</Width>
+							<ContextMenu name="ДриблингКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="ДриблингРасширеннаяПодсказка" id="17"/>
+							<SelectedItemsActionsPanel name="ДриблингПанельДействийВыделенныхСтрок" id="18"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Футболисты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПаутинаНавыков" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Паутина навыков</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресФотографии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес фотографии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Дриблинг</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Дриблинг</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">70</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Трансфер" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансфер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансфер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Трансфер</Action>
+		</Command>
+	</Commands>
+</Form>

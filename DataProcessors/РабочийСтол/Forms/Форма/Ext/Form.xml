@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКоманды" id="154">
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="155"/>
+			<ChildItems>
+				<Button name="Тактика" id="156">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<Height>3</Height>
+					<MaxHeight>10</MaxHeight>
+					<CommandName>Form.Command.Тактика</CommandName>
+					<ExtendedTooltip name="ТактикаРасширеннаяПодсказка" id="157"/>
+				</Button>
+				<Button name="РазыгратьИгровойДень" id="63">
+					<Type>UsualButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<Width>30</Width>
+					<Height>3</Height>
+					<CommandName>Form.Command.РазыгратьИгровойДень</CommandName>
+					<ButtonImportance>Main</ButtonImportance>
+					<ExtendedTooltip name="РазыгратьИгровойДеньРасширеннаяПодсказка" id="64"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаГоризонтальная" id="123">
+			<Group>AlwaysHorizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="124"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВертикальная" id="284">
+					<VerticalStretch>false</VerticalStretch>
+					<ShowTitle>false</ShowTitle>
+					<ScrollOnCompress>true</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="285"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаУведомления" id="251">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уведомления</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаУведомленияРасширеннаяПодсказка" id="252"/>
+							<ChildItems>
+								<Button name="ПрочитатьВсеУведомления" id="414">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПрочитатьВсеУведомления</CommandName>
+									<ExtendedTooltip name="ПрочитатьВсеУведомленияРасширеннаяПодсказка" id="415"/>
+								</Button>
+								<Table name="Уведомления" id="224">
+									<CommandBarLocation>None</CommandBarLocation>
+									<ReadOnly>true</ReadOnly>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>7</MaxHeight>
+									<Header>false</Header>
+									<VerticalStretch>false</VerticalStretch>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>УведомленияСписок</DataPath>
+									<RowPictureDataPath>УведомленияСписок.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>Change</ExcludedCommand>
+									</CommandSet>
+									<ShowCommandBar>false</ShowCommandBar>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="УведомленияКонтекстноеМеню" id="225"/>
+									<AutoCommandBar name="УведомленияКоманднаяПанель" id="226"/>
+									<ExtendedTooltip name="УведомленияРасширеннаяПодсказка" id="227"/>
+									<SearchStringAddition name="УведомленияСтрокаПоиска" id="228">
+										<AdditionSource>
+											<Item>Уведомления</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УведомленияСтрокаПоискаКонтекстноеМеню" id="229"/>
+										<ExtendedTooltip name="УведомленияСтрокаПоискаРасширеннаяПодсказка" id="230"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="УведомленияСостояниеПросмотра" id="231">
+										<AdditionSource>
+											<Item>Уведомления</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="УведомленияСостояниеПросмотраКонтекстноеМеню" id="232"/>
+										<ExtendedTooltip name="УведомленияСостояниеПросмотраРасширеннаяПодсказка" id="233"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="УведомленияУправлениеПоиском" id="234">
+										<AdditionSource>
+											<Item>Уведомления</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="УведомленияУправлениеПоискомКонтекстноеМеню" id="235"/>
+										<ExtendedTooltip name="УведомленияУправлениеПоискомРасширеннаяПодсказка" id="236"/>
+									</SearchControlAddition>
+									<SelectedItemsActionsPanel name="УведомленияПанельДействийВыделенныхСтрок" id="237"/>
+									<Events>
+										<Event name="Selection">УведомленияВыбор</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="УведомленияТекст" id="243">
+											<DataPath>УведомленияСписок.Текст</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<MaxHeight>10</MaxHeight>
+											<ContextMenu name="УведомленияТекстКонтекстноеМеню" id="244"/>
+											<ExtendedTooltip name="УведомленияТекстРасширеннаяПодсказка" id="245"/>
+											<SelectedItemsActionsPanel name="УведомленияТекстПанельДействийВыделенныхСтрок" id="246"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПереговоры" id="286">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Переговоры</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаПереговорыРасширеннаяПодсказка" id="287"/>
+							<ChildItems>
+								<Table name="ПереговорныйПроцесс" id="253">
+									<CommandBarLocation>None</CommandBarLocation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>7</MaxHeight>
+									<VerticalStretch>false</VerticalStretch>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ПереговорныйПроцесс</DataPath>
+									<RowPictureDataPath>ПереговорныйПроцесс.DefaultPicture</RowPictureDataPath>
+									<CommandSet>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Post</ExcludedCommand>
+										<ExcludedCommand>UndoPosting</ExcludedCommand>
+									</CommandSet>
+									<ShowCommandBar>false</ShowCommandBar>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ПереговорныйПроцессКонтекстноеМеню" id="254"/>
+									<AutoCommandBar name="ПереговорныйПроцессКоманднаяПанель" id="255"/>
+									<ExtendedTooltip name="ПереговорныйПроцессРасширеннаяПодсказка" id="256"/>
+									<SearchStringAddition name="ПереговорныйПроцессСтрокаПоиска" id="257">
+										<AdditionSource>
+											<Item>ПереговорныйПроцесс</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПереговорныйПроцессСтрокаПоискаКонтекстноеМеню" id="258"/>
+										<ExtendedTooltip name="ПереговорныйПроцессСтрокаПоискаРасширеннаяПодсказка" id="259"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПереговорныйПроцессСостояниеПросмотра" id="260">
+										<AdditionSource>
+											<Item>ПереговорныйПроцесс</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПереговорныйПроцессСостояниеПросмотраКонтекстноеМеню" id="261"/>
+										<ExtendedTooltip name="ПереговорныйПроцессСостояниеПросмотраРасширеннаяПодсказка" id="262"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПереговорныйПроцессУправлениеПоиском" id="263">
+										<AdditionSource>
+											<Item>ПереговорныйПроцесс</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПереговорныйПроцессУправлениеПоискомКонтекстноеМеню" id="264"/>
+										<ExtendedTooltip name="ПереговорныйПроцессУправлениеПоискомРасширеннаяПодсказка" id="265"/>
+									</SearchControlAddition>
+									<SelectedItemsActionsPanel name="ПереговорныйПроцессПанельДействийВыделенныхСтрок" id="266"/>
+									<ChildItems>
+										<LabelField name="ПереговорныйПроцессФутболист" id="276">
+											<DataPath>ПереговорныйПроцесс.Футболист</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПереговорныйПроцессФутболистКонтекстноеМеню" id="277"/>
+											<ExtendedTooltip name="ПереговорныйПроцессФутболистРасширеннаяПодсказка" id="278"/>
+											<SelectedItemsActionsPanel name="ПереговорныйПроцессФутболистПанельДействийВыделенныхСтрок" id="279"/>
+										</LabelField>
+										<LabelField name="ПереговорныйПроцессПредложение" id="268">
+											<DataPath>ПереговорныйПроцесс.Предложение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПереговорныйПроцессПредложениеКонтекстноеМеню" id="269"/>
+											<ExtendedTooltip name="ПереговорныйПроцессПредложениеРасширеннаяПодсказка" id="270"/>
+											<SelectedItemsActionsPanel name="ПереговорныйПроцессПредложениеПанельДействийВыделенныхСтрок" id="271"/>
+										</LabelField>
+										<LabelField name="ПереговорныйПроцессФутбольныйКлуб" id="280">
+											<DataPath>ПереговорныйПроцесс.ФутбольныйКлуб</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ContextMenu name="ПереговорныйПроцессФутбольныйКлубКонтекстноеМеню" id="281"/>
+											<ExtendedTooltip name="ПереговорныйПроцессФутбольныйКлубРасширеннаяПодсказка" id="282"/>
+											<SelectedItemsActionsPanel name="ПереговорныйПроцессФутбольныйКлубПанельДействийВыделенныхСтрок" id="283"/>
+										</LabelField>
+										<LabelField name="ПереговорныйПроцессТрансфер" id="294">
+											<DataPath>ПереговорныйПроцесс.Трансфер</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<ContextMenu name="ПереговорныйПроцессТрансферКонтекстноеМеню" id="295"/>
+											<ExtendedTooltip name="ПереговорныйПроцессТрансферРасширеннаяПодсказка" id="296"/>
+											<SelectedItemsActionsPanel name="ПереговорныйПроцессТрансферПанельДействийВыделенныхСтрок" id="297"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТопТрансферы" id="373">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Топ-трансферы за 12 мес.</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа топ трансферы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаТопТрансферыРасширеннаяПодсказка" id="374"/>
+							<ChildItems>
+								<Table name="Трансферы" id="346">
+									<Representation>List</Representation>
+									<CommandBarLocation>None</CommandBarLocation>
+									<ReadOnly>true</ReadOnly>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>7</MaxHeight>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<VerticalStretch>false</VerticalStretch>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СписокТрансферы</DataPath>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТрансферыКонтекстноеМеню" id="347"/>
+									<AutoCommandBar name="ТрансферыКоманднаяПанель" id="348"/>
+									<ExtendedTooltip name="ТрансферыРасширеннаяПодсказка" id="349"/>
+									<SearchStringAddition name="ТрансферыСтрокаПоиска" id="350">
+										<AdditionSource>
+											<Item>Трансферы</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТрансферыСтрокаПоискаКонтекстноеМеню" id="351"/>
+										<ExtendedTooltip name="ТрансферыСтрокаПоискаРасширеннаяПодсказка" id="352"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТрансферыСостояниеПросмотра" id="353">
+										<AdditionSource>
+											<Item>Трансферы</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТрансферыСостояниеПросмотраКонтекстноеМеню" id="354"/>
+										<ExtendedTooltip name="ТрансферыСостояниеПросмотраРасширеннаяПодсказка" id="355"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТрансферыУправлениеПоиском" id="356">
+										<AdditionSource>
+											<Item>Трансферы</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТрансферыУправлениеПоискомКонтекстноеМеню" id="357"/>
+										<ExtendedTooltip name="ТрансферыУправлениеПоискомРасширеннаяПодсказка" id="358"/>
+									</SearchControlAddition>
+									<SelectedItemsActionsPanel name="ТрансферыПанельДействийВыделенныхСтрок" id="359"/>
+									<Events>
+										<Event name="Selection">ТрансферыВыбор</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ТрансферыКлубПродавец" id="365">
+											<DataPath>СписокТрансферы.КлубПродавец</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТрансферыКлубПродавецКонтекстноеМеню" id="366"/>
+											<ExtendedTooltip name="ТрансферыКлубПродавецРасширеннаяПодсказка" id="367"/>
+											<SelectedItemsActionsPanel name="ТрансферыКлубПродавецПанельДействийВыделенныхСтрок" id="368"/>
+										</InputField>
+										<InputField name="ТрансферыФутболист" id="361">
+											<DataPath>СписокТрансферы.Футболист</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТрансферыФутболистКонтекстноеМеню" id="362"/>
+											<ExtendedTooltip name="ТрансферыФутболистРасширеннаяПодсказка" id="363"/>
+											<SelectedItemsActionsPanel name="ТрансферыФутболистПанельДействийВыделенныхСтрок" id="364"/>
+										</InputField>
+										<InputField name="ТрансферыКлубПокупатель" id="369">
+											<DataPath>СписокТрансферы.КлубПокупатель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТрансферыКлубПокупательКонтекстноеМеню" id="370"/>
+											<ExtendedTooltip name="ТрансферыКлубПокупательРасширеннаяПодсказка" id="371"/>
+											<SelectedItemsActionsPanel name="ТрансферыКлубПокупательПанельДействийВыделенныхСтрок" id="372"/>
+										</InputField>
+										<InputField name="ТрансферыСуммаТрансфера" id="375">
+											<DataPath>СписокТрансферы.СуммаТрансфера</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТрансферыСуммаТрансфераКонтекстноеМеню" id="376"/>
+											<ExtendedTooltip name="ТрансферыСуммаТрансфераРасширеннаяПодсказка" id="377"/>
+											<SelectedItemsActionsPanel name="ТрансферыСуммаТрансфераПанельДействийВыделенныхСтрок" id="378"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДанныеСезона" id="194">
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДанныеСезонаРасширеннаяПодсказка" id="195"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияТрансферноеОкно" id="430">
+							<TextColor>style:AccentColor</TextColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Трансферное окно открыто</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияТрансферноеОкноКонтекстноеМеню" id="431"/>
+							<ExtendedTooltip name="ДекорацияТрансферноеОкноРасширеннаяПодсказка" id="432"/>
+						</LabelDecoration>
+						<LabelField name="ТекущаяИгроваяДата" id="196">
+							<DataPath>ТекущаяИгроваяДата</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:TitleLevel2" kind="StyleItem"/>
+							<ContextMenu name="ТекущаяИгроваяДатаКонтекстноеМеню" id="197"/>
+							<ExtendedTooltip name="ТекущаяИгроваяДатаРасширеннаяПодсказка" id="198"/>
+							<SelectedItemsActionsPanel name="ТекущаяИгроваяДатаПанельДействийВыделенныхСтрок" id="199"/>
+						</LabelField>
+						<LabelField name="ТрансферныйБюджет" id="200">
+							<DataPath>ТрансферныйБюджет</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧН=0</v8:content>
+								</v8:item>
+							</Format>
+							<Font ref="style:TitleLevel2" kind="StyleItem"/>
+							<ContextMenu name="ТрансферныйБюджетКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="ТрансферныйБюджетРасширеннаяПодсказка" id="202"/>
+							<SelectedItemsActionsPanel name="ТрансферныйБюджетПанельДействийВыделенныхСтрок" id="203"/>
+						</LabelField>
+						<InputField name="Лига" id="186">
+							<DataPath>Лига</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЛигаКонтекстноеМеню" id="187"/>
+							<ExtendedTooltip name="ЛигаРасширеннаяПодсказка" id="188"/>
+							<SelectedItemsActionsPanel name="ЛигаПанельДействийВыделенныхСтрок" id="189"/>
+							<Events>
+								<Event name="OnChange">ЛигаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Сезон" id="190">
+							<DataPath>Сезон</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СезонКонтекстноеМеню" id="191"/>
+							<ExtendedTooltip name="СезонРасширеннаяПодсказка" id="192"/>
+							<SelectedItemsActionsPanel name="СезонПанельДействийВыделенныхСтрок" id="193"/>
+							<Events>
+								<Event name="OnChange">СезонПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Pages name="ГруппаСтатистика" id="66">
+							<ExtendedTooltip name="ГруппаСтатистикаРасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<Page name="ГруппаТурнирнаяТаблица" id="68">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Турнирная таблица</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа турнирная таблица</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаТурнирнаяТаблицаРасширеннаяПодсказка" id="69"/>
+									<ChildItems>
+										<Table name="ТурнирнаяТаблица" id="1">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>ТурнирнаяТаблица</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
+											<ShowCommandBar>false</ShowCommandBar>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ТурнирнаяТаблицаКонтекстноеМеню" id="2"/>
+											<AutoCommandBar name="ТурнирнаяТаблицаКоманднаяПанель" id="3"/>
+											<ExtendedTooltip name="ТурнирнаяТаблицаРасширеннаяПодсказка" id="4"/>
+											<SearchStringAddition name="ТурнирнаяТаблицаСтрокаПоиска" id="5">
+												<AdditionSource>
+													<Item>ТурнирнаяТаблица</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТурнирнаяТаблицаСтрокаПоискаКонтекстноеМеню" id="6"/>
+												<ExtendedTooltip name="ТурнирнаяТаблицаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТурнирнаяТаблицаСостояниеПросмотра" id="8">
+												<AdditionSource>
+													<Item>ТурнирнаяТаблица</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТурнирнаяТаблицаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+												<ExtendedTooltip name="ТурнирнаяТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТурнирнаяТаблицаУправлениеПоиском" id="11">
+												<AdditionSource>
+													<Item>ТурнирнаяТаблица</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТурнирнаяТаблицаУправлениеПоискомКонтекстноеМеню" id="12"/>
+												<ExtendedTooltip name="ТурнирнаяТаблицаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+											</SearchControlAddition>
+											<SelectedItemsActionsPanel name="ТурнирнаяТаблицаПанельДействийВыделенныхСтрок" id="14"/>
+											<Events>
+												<Event name="Selection">ТурнирнаяТаблицаВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="ТурнирнаяТаблицаПозиция" id="16">
+													<DataPath>ТурнирнаяТаблица.Позиция</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТурнирнаяТаблицаПозицияКонтекстноеМеню" id="17"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаПозицияРасширеннаяПодсказка" id="18"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаПозицияПанельДействийВыделенныхСтрок" id="19"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаФутбольныйКлуб" id="20">
+													<DataPath>ТурнирнаяТаблица.ФутбольныйКлуб</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Клуб</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>4</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТурнирнаяТаблицаФутбольныйКлубКонтекстноеМеню" id="21"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаФутбольныйКлубРасширеннаяПодсказка" id="22"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаФутбольныйКлубПанельДействийВыделенныхСтрок" id="23"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаСыграноМатчей" id="24">
+													<DataPath>ТурнирнаяТаблица.СыграноМатчей</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>М</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаСыграноМатчейКонтекстноеМеню" id="25"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаСыграноМатчейРасширеннаяПодсказка" id="26"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаСыграноМатчейПанельДействийВыделенныхСтрок" id="27"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаОчки" id="48">
+													<DataPath>ТурнирнаяТаблица.Очки</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>О</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаОчкиКонтекстноеМеню" id="49"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаОчкиРасширеннаяПодсказка" id="50"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаОчкиПанельДействийВыделенныхСтрок" id="51"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаВыигрыши" id="28">
+													<DataPath>ТурнирнаяТаблица.Выигрыши</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаВыигрышиКонтекстноеМеню" id="29"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаВыигрышиРасширеннаяПодсказка" id="30"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаВыигрышиПанельДействийВыделенныхСтрок" id="31"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаНичьи" id="32">
+													<DataPath>ТурнирнаяТаблица.Ничьи</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Н</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаНичьиКонтекстноеМеню" id="33"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаНичьиРасширеннаяПодсказка" id="34"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаНичьиПанельДействийВыделенныхСтрок" id="35"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаПорожения" id="36">
+													<DataPath>ТурнирнаяТаблица.Порожения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>П</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаПороженияКонтекстноеМеню" id="37"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаПороженияРасширеннаяПодсказка" id="38"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаПороженияПанельДействийВыделенныхСтрок" id="39"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаЗабито" id="40">
+													<DataPath>ТурнирнаяТаблица.Забито</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>МЗ</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаЗабитоКонтекстноеМеню" id="41"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаЗабитоРасширеннаяПодсказка" id="42"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаЗабитоПанельДействийВыделенныхСтрок" id="43"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаПропущено" id="44">
+													<DataPath>ТурнирнаяТаблица.Пропущено</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>МП</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаПропущеноКонтекстноеМеню" id="45"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаПропущеноРасширеннаяПодсказка" id="46"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаПропущеноПанельДействийВыделенныхСтрок" id="47"/>
+												</InputField>
+												<InputField name="ТурнирнаяТаблицаРазницаМячей" id="52">
+													<DataPath>ТурнирнаяТаблица.РазницаМячей</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>РМ</v8:content>
+														</v8:item>
+													</Title>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<EditMode>EnterOnInput</EditMode>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<AutoEditMode>true</AutoEditMode>
+													<MaxWidth>2</MaxWidth>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ТурнирнаяТаблицаРазницаМячейКонтекстноеМеню" id="53"/>
+													<ExtendedTooltip name="ТурнирнаяТаблицаРазницаМячейРасширеннаяПодсказка" id="54"/>
+													<SelectedItemsActionsPanel name="ТурнирнаяТаблицаРазницаМячейПанельДействийВыделенныхСтрок" id="55"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаБомбардиры" id="70">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Бомбардиры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа бомбардиры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаБомбардирыРасширеннаяПодсказка" id="71"/>
+									<ChildItems>
+										<Table name="Бомбардиры" id="72">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Бомбардиры</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
+											<ShowCommandBar>false</ShowCommandBar>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="БомбардирыКонтекстноеМеню" id="73"/>
+											<AutoCommandBar name="БомбардирыКоманднаяПанель" id="74"/>
+											<ExtendedTooltip name="БомбардирыРасширеннаяПодсказка" id="75"/>
+											<SearchStringAddition name="БомбардирыСтрокаПоиска" id="76">
+												<AdditionSource>
+													<Item>Бомбардиры</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="БомбардирыСтрокаПоискаКонтекстноеМеню" id="77"/>
+												<ExtendedTooltip name="БомбардирыСтрокаПоискаРасширеннаяПодсказка" id="78"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="БомбардирыСостояниеПросмотра" id="79">
+												<AdditionSource>
+													<Item>Бомбардиры</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="БомбардирыСостояниеПросмотраКонтекстноеМеню" id="80"/>
+												<ExtendedTooltip name="БомбардирыСостояниеПросмотраРасширеннаяПодсказка" id="81"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="БомбардирыУправлениеПоиском" id="82">
+												<AdditionSource>
+													<Item>Бомбардиры</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="БомбардирыУправлениеПоискомКонтекстноеМеню" id="83"/>
+												<ExtendedTooltip name="БомбардирыУправлениеПоискомРасширеннаяПодсказка" id="84"/>
+											</SearchControlAddition>
+											<SelectedItemsActionsPanel name="БомбардирыПанельДействийВыделенныхСтрок" id="85"/>
+											<ChildItems>
+												<InputField name="БомбардирыФутболист" id="87">
+													<DataPath>Бомбардиры.Футболист</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="БомбардирыФутболистКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="БомбардирыФутболистРасширеннаяПодсказка" id="89"/>
+													<SelectedItemsActionsPanel name="БомбардирыФутболистПанельДействийВыделенныхСтрок" id="90"/>
+												</InputField>
+												<InputField name="БомбардирыФутболистФутбольныйКлуб" id="158">
+													<DataPath>Бомбардиры.Футболист.ФутбольныйКлуб</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="БомбардирыФутболистФутбольныйКлубКонтекстноеМеню" id="159"/>
+													<ExtendedTooltip name="БомбардирыФутболистФутбольныйКлубРасширеннаяПодсказка" id="160"/>
+													<SelectedItemsActionsPanel name="БомбардирыФутболистФутбольныйКлубПанельДействийВыделенныхСтрок" id="161"/>
+												</InputField>
+												<InputField name="БомбардирыГолы" id="91">
+													<DataPath>Бомбардиры.Голы</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="БомбардирыГолыКонтекстноеМеню" id="92"/>
+													<ExtendedTooltip name="БомбардирыГолыРасширеннаяПодсказка" id="93"/>
+													<SelectedItemsActionsPanel name="БомбардирыГолыПанельДействийВыделенныхСтрок" id="94"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаАссистенты" id="95">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ассистенты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа ассистенты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаАссистентыРасширеннаяПодсказка" id="96"/>
+									<ChildItems>
+										<Table name="Ассистенты" id="97">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Ассистенты</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+											</CommandSet>
+											<ShowCommandBar>false</ShowCommandBar>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="АссистентыКонтекстноеМеню" id="98"/>
+											<AutoCommandBar name="АссистентыКоманднаяПанель" id="99"/>
+											<ExtendedTooltip name="АссистентыРасширеннаяПодсказка" id="100"/>
+											<SearchStringAddition name="АссистентыСтрокаПоиска" id="101">
+												<AdditionSource>
+													<Item>Ассистенты</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АссистентыСтрокаПоискаКонтекстноеМеню" id="102"/>
+												<ExtendedTooltip name="АссистентыСтрокаПоискаРасширеннаяПодсказка" id="103"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="АссистентыСостояниеПросмотра" id="104">
+												<AdditionSource>
+													<Item>Ассистенты</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АссистентыСостояниеПросмотраКонтекстноеМеню" id="105"/>
+												<ExtendedTooltip name="АссистентыСостояниеПросмотраРасширеннаяПодсказка" id="106"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="АссистентыУправлениеПоиском" id="107">
+												<AdditionSource>
+													<Item>Ассистенты</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="АссистентыУправлениеПоискомКонтекстноеМеню" id="108"/>
+												<ExtendedTooltip name="АссистентыУправлениеПоискомРасширеннаяПодсказка" id="109"/>
+											</SearchControlAddition>
+											<SelectedItemsActionsPanel name="АссистентыПанельДействийВыделенныхСтрок" id="110"/>
+											<ChildItems>
+												<InputField name="АссистентыФутболист" id="112">
+													<DataPath>Ассистенты.Футболист</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="АссистентыФутболистКонтекстноеМеню" id="113"/>
+													<ExtendedTooltip name="АссистентыФутболистРасширеннаяПодсказка" id="114"/>
+													<SelectedItemsActionsPanel name="АссистентыФутболистПанельДействийВыделенныхСтрок" id="115"/>
+												</InputField>
+												<InputField name="АссистентыФутболистФутбольныйКлуб" id="162">
+													<DataPath>Ассистенты.Футболист.ФутбольныйКлуб</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="АссистентыФутболистФутбольныйКлубКонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="АссистентыФутболистФутбольныйКлубРасширеннаяПодсказка" id="164"/>
+													<SelectedItemsActionsPanel name="АссистентыФутболистФутбольныйКлубПанельДействийВыделенныхСтрок" id="165"/>
+												</InputField>
+												<InputField name="АссистентыГолевыеПередачи" id="116">
+													<DataPath>Ассистенты.ГолевыеПередачи</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<AutoEditMode>true</AutoEditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="АссистентыГолевыеПередачиКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="АссистентыГолевыеПередачиРасширеннаяПодсказка" id="118"/>
+													<SelectedItemsActionsPanel name="АссистентыГолевыеПередачиПанельДействийВыделенныхСтрок" id="119"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРасписание" id="152">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расписание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расписание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРасписаниеРасширеннаяПодсказка" id="153"/>
+					<ChildItems>
+						<Table name="РасписаниеКоманды" id="125">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>РасписаниеКоманды</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РасписаниеКомандыКонтекстноеМеню" id="126"/>
+							<AutoCommandBar name="РасписаниеКомандыКоманднаяПанель" id="127"/>
+							<ExtendedTooltip name="РасписаниеКомандыРасширеннаяПодсказка" id="128"/>
+							<SearchStringAddition name="РасписаниеКомандыСтрокаПоиска" id="129">
+								<AdditionSource>
+									<Item>РасписаниеКоманды</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКомандыСтрокаПоискаКонтекстноеМеню" id="130"/>
+								<ExtendedTooltip name="РасписаниеКомандыСтрокаПоискаРасширеннаяПодсказка" id="131"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасписаниеКомандыСостояниеПросмотра" id="132">
+								<AdditionSource>
+									<Item>РасписаниеКоманды</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКомандыСостояниеПросмотраКонтекстноеМеню" id="133"/>
+								<ExtendedTooltip name="РасписаниеКомандыСостояниеПросмотраРасширеннаяПодсказка" id="134"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасписаниеКомандыУправлениеПоиском" id="135">
+								<AdditionSource>
+									<Item>РасписаниеКоманды</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасписаниеКомандыУправлениеПоискомКонтекстноеМеню" id="136"/>
+								<ExtendedTooltip name="РасписаниеКомандыУправлениеПоискомРасширеннаяПодсказка" id="137"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="РасписаниеКомандыПанельДействийВыделенныхСтрок" id="138"/>
+							<Events>
+								<Event name="Selection">РасписаниеКомандыВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РасписаниеКомандыМестоВстречи" id="140">
+									<DataPath>РасписаниеКоманды.МестоВстречи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасписаниеКомандыМестоВстречиКонтекстноеМеню" id="141"/>
+									<ExtendedTooltip name="РасписаниеКомандыМестоВстречиРасширеннаяПодсказка" id="142"/>
+									<SelectedItemsActionsPanel name="РасписаниеКомандыМестоВстречиПанельДействийВыделенныхСтрок" id="143"/>
+								</InputField>
+								<InputField name="РасписаниеКомандыПротивник" id="144">
+									<DataPath>РасписаниеКоманды.Противник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасписаниеКомандыПротивникКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="РасписаниеКомандыПротивникРасширеннаяПодсказка" id="146"/>
+									<SelectedItemsActionsPanel name="РасписаниеКомандыПротивникПанельДействийВыделенныхСтрок" id="147"/>
+								</InputField>
+								<InputField name="РасписаниеКомандыСчет" id="148">
+									<DataPath>РасписаниеКоманды.Счет</DataPath>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасписаниеКомандыСчетКонтекстноеМеню" id="149"/>
+									<ExtendedTooltip name="РасписаниеКомандыСчетРасширеннаяПодсказка" id="150"/>
+									<SelectedItemsActionsPanel name="РасписаниеКомандыСчетПанельДействийВыделенныхСтрок" id="151"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РабочийСтол</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТурнирнаяТаблица" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Турнирная таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Позиция" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Позиция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФутбольныйКлуб" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футбольный клуб</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СыграноМатчей" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сыграно матчей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выигрыши" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выигрыши</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ничьи" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ничьи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Порожения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порожения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Забито" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Забито</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пропущено" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пропущено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Очки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазницаМячей" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разница мячей</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Бомбардиры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бомбардиры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Футболист" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футболист</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Футболисты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Голы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Голы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Ассистенты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ассистенты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Футболист" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футболист</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Футболисты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ГолевыеПередачи" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Голевые передачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РасписаниеКоманды" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МестоВстречи" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Место встречи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Противник" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Противник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Счет" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Матч" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Матч</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ФутбольныйМатч</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Результат" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РезультатМатча</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ФутбольныйКлуб" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Футбольный клуб</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаСледующегоМатча" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата следующего матча</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяИгроваяДата" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая игровая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Сезон" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сезон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сезоны</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Лига" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лига</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Лиги</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТрансферныйБюджет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Трансферный бюджет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УведомленияСписок" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>УведомленияСписок.Идентификатор</Field>
+				<Field>УведомленияСписок.Предмет</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.Уведомления</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ПереговорныйПроцесс" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переговорный процесс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ПереговорныйПроцесс.Трансфер</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Трансфер.Ссылка КАК Трансфер,
+	Трансфер.Футболист КАК Футболист,
+	ВЫБОР
+		КОГДА Трансфер.КлубПродавец = &amp;ФутбольныйКлуб
+			ТОГДА Трансфер.КлубПокупатель
+		ИНАЧЕ Трансфер.КлубПродавец
+	КОНЕЦ КАК ФутбольныйКлуб,
+	Трансфер.Предложение КАК Предложение
+ИЗ
+	Документ.Трансфер КАК Трансфер
+ГДЕ
+	(Трансфер.КлубПродавец = &amp;ФутбольныйКлуб
+			ИЛИ Трансфер.КлубПокупатель = &amp;ФутбольныйКлуб)
+	И Трансфер.СтатусПереговоров В (ЗНАЧЕНИЕ(Перечисление.СтатусПереговоров.ОтветноеПредложение), ЗНАЧЕНИЕ(Перечисление.СтатусПереговоров.ПустаяСсылка))</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФутбольныйКлуб</dcssch:dataPath>
+					<dcssch:field>ФутбольныйКлуб</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футбольный клуб</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Трансфер</dcssch:dataPath>
+					<dcssch:field>Трансфер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трансфер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Футболист</dcssch:dataPath>
+					<dcssch:field>Футболист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предложение</dcssch:dataPath>
+					<dcssch:field>Предложение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КлубПродавец</dcssch:dataPath>
+					<dcssch:field>КлубПродавец</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КлубПокупатель</dcssch:dataPath>
+					<dcssch:field>КлубПокупатель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проведен</dcssch:dataPath>
+					<dcssch:field>Проведен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПереговоров</dcssch:dataPath>
+					<dcssch:field>СтатусПереговоров</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МоментВремени</dcssch:dataPath>
+					<dcssch:field>МоментВремени</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтветноеПредложение</dcssch:dataPath>
+					<dcssch:field>ОтветноеПредложение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОжидаетсяДействиеИгры</dcssch:dataPath>
+					<dcssch:field>ОжидаетсяДействиеИгры</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИсторияПереговоров</dcssch:dataPath>
+					<dcssch:field>ИсторияПереговоров</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ФутбольныйКлуб</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футбольный клуб</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Document.Трансфер</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Дата</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокТрансферы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список трансферы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Футболист" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Футболист</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Футболисты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КлубПродавец" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продавец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КлубПокупатель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Покупатель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ФутбольныеКлубы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаТрансфера" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма трансфера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Трансфер" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трансфер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Трансфер</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РазыгратьИгровойДень" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разыграть следующий игровой день</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РазыгратьИгровойДень</Action>
+		</Command>
+		<Command name="Тактика" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тактика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тактика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тактика</Action>
+		</Command>
+		<Command name="ПрочитатьВсеУведомления" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать все уведомления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочитать все уведомления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрочитатьВсеУведомления</Action>
+		</Command>
+	</Commands>
+</Form>
