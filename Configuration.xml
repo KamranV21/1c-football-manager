@@ -44,7 +44,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Камран Велиев</Vendor>
-			<Version>0.0.1</Version>
+			<Version>0.0.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -304,7 +304,6 @@
 			<CommonModule>ИгровыеМеханики</CommonModule>
 			<CommonModule>ИнициализацияДанных</CommonModule>
 			<CommonModule>Интерфейс</CommonModule>
-			<CommonModule>ОбщегоНазначения</CommonModule>
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>РаботаСJSON</CommonModule>
@@ -329,19 +328,19 @@
 			<Enum>ИгровыеТактики</Enum>
 			<Enum>РезультатМатча</Enum>
 			<Enum>СтатусПереговоров</Enum>
-			<Report>ПаутинаНавыков</Report>
 			<Report>АнализТрансферногоРынка</Report>
+			<Report>ПаутинаНавыков</Report>
 			<DataProcessor>РабочийСтол</DataProcessor>
-			<InformationRegister>СоставЛиги</InformationRegister>
-			<InformationRegister>РасписаниеЛиги</InformationRegister>
 			<InformationRegister>ИсторияФутболистов</InformationRegister>
+			<InformationRegister>РасписаниеЛиги</InformationRegister>
+			<InformationRegister>РасстановкаСилНаНачалоСезона</InformationRegister>
+			<InformationRegister>СоставЛиги</InformationRegister>
 			<InformationRegister>ТрансфернаяСтоимость</InformationRegister>
 			<InformationRegister>Уведомления</InformationRegister>
-			<InformationRegister>РасстановкаСилНаНачалоСезона</InformationRegister>
-			<AccumulationRegister>ТурнирнаяТаблица</AccumulationRegister>
-			<AccumulationRegister>СтатистикаФутболистов</AccumulationRegister>
 			<AccumulationRegister>БюджетыФутбольныхКлубов</AccumulationRegister>
+			<AccumulationRegister>СтатистикаФутболистов</AccumulationRegister>
 			<AccumulationRegister>Трансферы</AccumulationRegister>
+			<AccumulationRegister>ТурнирнаяТаблица</AccumulationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

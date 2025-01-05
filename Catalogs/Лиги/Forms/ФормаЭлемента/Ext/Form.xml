@@ -96,6 +96,18 @@
 									<DataPath>Объект.МесяцаМатчей.Месяц</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</EditFormat>
 									<ContextMenu name="МесяцаМатчейМесяцКонтекстноеМеню" id="37"/>
 									<ExtendedTooltip name="МесяцаМатчейМесяцРасширеннаяПодсказка" id="38"/>
 									<SelectedItemsActionsPanel name="МесяцаМатчейМесяцПанельДействийВыделенныхСтрок" id="39"/>
@@ -160,6 +172,18 @@
 									<DataPath>Объект.ТрансферныеОкна.ДатаНачала</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</EditFormat>
 									<ContextMenu name="ТрансферныеОкнаДатаНачалаКонтекстноеМеню" id="62"/>
 									<ExtendedTooltip name="ТрансферныеОкнаДатаНачалаРасширеннаяПодсказка" id="63"/>
 									<SelectedItemsActionsPanel name="ТрансферныеОкнаДатаНачалаПанельДействийВыделенныхСтрок" id="64"/>
@@ -168,6 +192,18 @@
 									<DataPath>Объект.ТрансферныеОкна.ДатаОкончания</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=MMMM</v8:content>
+										</v8:item>
+									</EditFormat>
 									<ContextMenu name="ТрансферныеОкнаДатаОкончанияКонтекстноеМеню" id="66"/>
 									<ExtendedTooltip name="ТрансферныеОкнаДатаОкончанияРасширеннаяПодсказка" id="67"/>
 									<SelectedItemsActionsPanel name="ТрансферныеОкнаДатаОкончанияПанельДействийВыделенныхСтрок" id="68"/>
