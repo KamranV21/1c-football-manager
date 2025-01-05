@@ -350,7 +350,7 @@
 					<ExtendedTooltip name="ГруппаДанныеСезонаРасширеннаяПодсказка" id="195"/>
 					<ChildItems>
 						<LabelDecoration name="ДекорацияТрансферноеОкно" id="430">
-							<TextColor>style:AccentColor</TextColor>
+							<TextColor>pal:Green</TextColor>
 							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 							<Title formatted="false">
 								<v8:item>
